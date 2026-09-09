@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="A browser-based lithography lab workbook with guided chapters, local progress, structured observations, and print/PDF export.">
+  <meta name="theme-color" content="#ffffff">
+  <link rel="canonical" href="https://edwardtorres.dev/projects/lithography-workbook">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://edwardtorres.dev/projects/lithography-workbook">
+  <meta property="og:title" content="Lithography Workbook | Edward Torres">
+  <meta property="og:description" content="A locally saved guided workbook for a semiconductor lithography learning activity—not an official SOP.">
+  <meta property="og:image" content="https://edwardtorres.dev/assets/projects/lithography-workbook/chapters-progress.png">
+  <meta property="og:image:alt" content="Lithography Workbook chapter navigation and progress state">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://edwardtorres.dev/assets/projects/lithography-workbook/chapters-progress.png">
+  <title>Lithography Workbook | Edward Torres</title>
+  <link rel="icon" href="../favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <main class="project-grid" id="main-content" tabindex="-1">
+    <div class="project-text">
+      <p class="eyebrow">SEMICONDUCTORS · LEARNING TOOL</p>
+      <h1>LITHOGRAPHY WORKBOOK</h1>
+      <p>A guided browser workbook for recording predictions, process parameters, observations, measurements, and reflection during a contact-lithography activity.</p>
+      <p class="tech-stack">HTML · CSS · JavaScript · localStorage</p>
+    </div>
+    <figure class="project-media">
+      <img src="../assets/projects/lithography-workbook/chapters-progress.png" alt="Lithography Workbook chapter menu with completed and incomplete states" width="1440" height="1000" decoding="async" fetchpriority="high">
+    </figure>
+  </main>
+
+  <section class="project-snapshot" aria-labelledby="snapshot-title">
+    <div class="snapshot-grid">
+      <figure class="snapshot-visual landscape">
+        <img src="../assets/projects/lithography-workbook/process-log-example.png" alt="Process log populated with explicitly synthetic demonstration entries" width="1440" height="1000" loading="lazy" decoding="async">
+        <figcaption>Synthetic demonstration entries; not an official procedure.</figcaption>
+      </figure>
+      <div class="snapshot-copy">
+        <p class="eyebrow">PROJECT SNAPSHOT</p>
+        <h2 id="snapshot-title">A long lab activity organized into clear, saved steps</h2>
+        <dl class="snapshot-meta">
+          <div><dt>Type</dt><dd>Static educational workbook</dd></div>
+          <div><dt>Status</dt><dd>Public demo; local browser persistence</dd></div>
+          <div><dt>Technologies</dt><dd>HTML, CSS, JavaScript, localStorage</dd></div>
+        </dl>
+        <ul class="capability-list">
+          <li>Guided chapter navigation and completion indicators</li>
+          <li>Structured process logs and observation fields</li>
+          <li>Automatic browser-local answer persistence</li>
+          <li>Exposure-study and measurement recording</li>
+          <li>Printable report for browser PDF export</li>
+        </ul>
+        <div class="project-actions">
+          <a class="button" href="https://github.com/edwardtorres/lithography-workbook" target="_blank" rel="noreferrer">SOURCE REPOSITORY</a>
+          <a class="button" href="https://edwardtorres.github.io/lithography-workbook/" target="_blank" rel="noreferrer">LIVE WORKBOOK</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="project-details" aria-label="Lithography Workbook implementation details">
+    <div class="details-gallery project-screens">
+      <img src="../assets/projects/lithography-workbook/print-preview.png" alt="Browser print view of the lithography workbook with synthetic fields" width="1440" height="1000" loading="lazy" decoding="async">
+      <img src="../assets/projects/lithography-workbook/chapter-mobile.png" alt="Lithography Workbook process-log chapter on a narrow viewport" width="390" height="844" loading="lazy" decoding="async">
+    </div>
+    <div class="project-copy-grid">
+      <article>
+        <h2>Technical details</h2>
+        <p>Chapter and field definitions are data-driven in vanilla JavaScript. Answers remain in <code>localStorage</code>, completion is derived from required fields, and the printable report is assembled entirely in the browser without an application backend.</p>
+      </article>
+      <article>
+        <h2>Safety, provenance &amp; limitations</h2>
+        <p>This is a recording aid for the named ExSTENT/Nano3 learning activity—not an official SOP, equipment authorization, or chemical-safety reference. Current facility procedures, SDS documents, PPE requirements, equipment rules, and instructor guidance always override the application.</p>
+        <p>Screenshot values are synthetic. Browser-local data can be lost when site storage is cleared, and externally sourced instructional content still requires permission and provenance review before broader reuse.</p>
+      </article>
+    </div>
+  </section>
+
+  <nav class="project-pagination" aria-label="Project navigation">
+    <a href="paperdrop.html">← PREVIOUS · PAPERDROP</a>
+    <a href="../work.html">ALL WORK</a>
+    <a href="chess-game.html">NEXT · CHESS GAME →</a>
+  </nav>
+
+  <footer>
+    <nav class="bottom-nav" aria-label="Primary navigation">
+      <a href="../index.html">Home</a>
+      <a href="../work.html" class="active" aria-current="page">Work</a>
+      <a href="../about.html">About</a>
+    </nav>
+  </footer>
+</body>
+</html>

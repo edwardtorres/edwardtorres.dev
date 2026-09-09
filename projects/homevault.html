@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="HomeVault is a responsive React and TypeScript home-inventory dashboard with demo mode, CSV export, and optional Supabase accounts.">
+  <meta name="theme-color" content="#ffffff">
+  <link rel="canonical" href="https://edwardtorres.dev/projects/homevault">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://edwardtorres.dev/projects/homevault">
+  <meta property="og:title" content="HomeVault | Edward Torres">
+  <meta property="og:description" content="A responsive inventory dashboard with an account-free demo and optional private Supabase storage.">
+  <meta property="og:image" content="https://edwardtorres.dev/assets/projects/homevault/dashboard-desktop.png">
+  <meta property="og:image:alt" content="HomeVault demo inventory dashboard">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://edwardtorres.dev/assets/projects/homevault/dashboard-desktop.png">
+  <title>HomeVault | Edward Torres</title>
+  <link rel="icon" href="../favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <main class="project-grid" id="main-content" tabindex="-1">
+    <div class="project-text">
+      <p class="eyebrow">WEB PRODUCT · INVENTORY</p>
+      <h1>HOMEVAULT</h1>
+      <p>A responsive dashboard for organizing belongings by room and category, documenting estimated value, and exporting a portable inventory.</p>
+      <p class="tech-stack">React · TypeScript · Vite · Supabase · Tailwind CSS</p>
+    </div>
+    <figure class="project-media">
+      <img src="../assets/projects/homevault/dashboard-desktop.png" alt="HomeVault dashboard populated with built-in demo inventory data" width="1440" height="900" decoding="async" fetchpriority="high">
+    </figure>
+  </main>
+
+  <section class="project-snapshot" aria-labelledby="snapshot-title">
+    <div class="snapshot-grid">
+      <figure class="snapshot-visual">
+        <img src="../assets/projects/homevault/dashboard-mobile.png" alt="HomeVault responsive dashboard on a narrow mobile viewport" width="390" height="844" loading="lazy" decoding="async">
+      </figure>
+      <div class="snapshot-copy">
+        <p class="eyebrow">PROJECT SNAPSHOT</p>
+        <h2 id="snapshot-title">Inventory that is easy to explore before sign-up</h2>
+        <dl class="snapshot-meta">
+          <div><dt>Type</dt><dd>Responsive web application</dd></div>
+          <div><dt>Status</dt><dd>Public demo; optional authenticated mode</dd></div>
+          <div><dt>Technologies</dt><dd>React, TypeScript, Vite, Supabase, Tailwind CSS</dd></div>
+        </dl>
+        <ul class="capability-list">
+          <li>Room, category, and item organization</li>
+          <li>Search across inventory details</li>
+          <li>CSV export and estimated-value summaries</li>
+          <li>Demo changes stored only in the browser</li>
+          <li>Optional Supabase authentication and private photo storage</li>
+        </ul>
+        <div class="project-actions">
+          <a class="button" href="https://github.com/edwardtorres/homevault-web" target="_blank" rel="noreferrer">SOURCE REPOSITORY</a>
+          <a class="button" href="https://edwardtorres.github.io/homevault-web/" target="_blank" rel="noreferrer">LIVE DEMO</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="project-details" aria-label="HomeVault implementation details">
+    <div class="details-gallery project-screens">
+      <img src="../assets/projects/homevault/room-category.png" alt="HomeVault room and category detail using demo data" width="1440" height="900" loading="lazy" decoding="async">
+      <img src="../assets/projects/homevault/item-form.png" alt="HomeVault item form containing synthetic demonstration information" width="1440" height="900" loading="lazy" decoding="async">
+    </div>
+    <div class="project-copy-grid">
+      <article>
+        <h2>Technical details</h2>
+        <p>A HashRouter keeps navigation compatible with static hosting. Demo mode uses a built-in dataset and browser-local state, while an optional Supabase configuration adds email authentication, owner-scoped relational data, and private image storage.</p>
+        <p>Database policies check ownership across the room → category → item hierarchy. The browser anon key is treated as public configuration; authorization depends on Row Level Security and storage policies.</p>
+      </article>
+      <article>
+        <h2>Verification &amp; limitations</h2>
+        <p>The production build passes locally. Authenticated mode remains pre-production until the row and storage policies are verified with two disposable accounts in Supabase.</p>
+        <p>The current model supports one photo per item and one account per inventory. Shared households, receipt scanning, PDF reports, and automated backups are not implemented.</p>
+      </article>
+    </div>
+  </section>
+
+  <nav class="project-pagination" aria-label="Project navigation">
+    <span></span>
+    <a href="../work.html">ALL WORK</a>
+    <a href="pocket-machinist.html">NEXT · POCKET MACHINIST →</a>
+  </nav>
+
+  <footer>
+    <nav class="bottom-nav" aria-label="Primary navigation">
+      <a href="../index.html">Home</a>
+      <a href="../work.html" class="active" aria-current="page">Work</a>
+      <a href="../about.html">About</a>
+    </nav>
+  </footer>
+</body>
+</html>

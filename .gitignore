@@ -1,0 +1,20 @@
+# Operating-system and editor files
+.DS_Store
+Thumbs.db
+Desktop.ini
+.idea/
+.vscode/
+
+# Local configuration and tooling state
+.env
+.env.*
+!.env.example
+.dev.vars
+.wrangler/
+node_modules/
+*.log
+
+# Automated test output
+playwright-report/
+test-results/
+qa-captures/

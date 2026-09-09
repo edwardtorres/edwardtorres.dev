@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="An SPC dashboard using synthetic semiconductor measurements, X-bar and R charts, corrected signal rules, and Cp/Cpk capability analysis.">
+  <meta name="theme-color" content="#ffffff">
+  <link rel="canonical" href="https://edwardtorres.dev/projects/spc-dashboard">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://edwardtorres.dev/projects/spc-dashboard">
+  <meta property="og:title" content="SPC Dashboard | Edward Torres">
+  <meta property="og:description" content="Statistical process-control exploration with corrected rule logic and a synthetic semiconductor dataset.">
+  <meta property="og:image" content="https://edwardtorres.dev/assets/projects/spc-dashboard/xbar_chart.png">
+  <meta property="og:image:alt" content="X-bar chart with two synthetic out-of-control signals">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://edwardtorres.dev/assets/projects/spc-dashboard/xbar_chart.png">
+  <title>SPC Dashboard | Edward Torres</title>
+  <link rel="icon" href="../favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <main class="project-grid" id="main-content" tabindex="-1">
+    <div class="project-text">
+      <p class="eyebrow">DATA · MANUFACTURING</p>
+      <h1>SPC DASHBOARD</h1>
+      <p>Control charts, rule signals, and capability calculations for exploring a synthetic oxide-thickness process.</p>
+      <p class="tech-stack">Python · Dash · Plotly · pandas · Matplotlib</p>
+    </div>
+    <figure class="project-media wide-chart">
+      <img src="../assets/projects/spc-dashboard/xbar_chart.png" alt="X-bar control chart with two injected synthetic out-of-control signals" width="1785" height="731" decoding="async" fetchpriority="high">
+    </figure>
+  </main>
+
+  <section class="project-snapshot" aria-labelledby="snapshot-title">
+    <div class="snapshot-grid">
+      <figure class="snapshot-visual landscape chart-visual">
+        <img src="../assets/projects/spc-dashboard/xbar_chart.png" alt="Verified exported X-bar chart from the synthetic SPC analysis" width="1785" height="731" loading="lazy" decoding="async">
+      </figure>
+      <div class="snapshot-copy">
+        <p class="eyebrow">PROJECT SNAPSHOT</p>
+        <h2 id="snapshot-title">From subgroup measurements to investigation signals</h2>
+        <dl class="snapshot-meta">
+          <div><dt>Type</dt><dd>Local analytics dashboard</dd></div>
+          <div><dt>Status</dt><dd>No maintained live deployment</dd></div>
+          <div><dt>Technologies</dt><dd>Python, Dash, Plotly, pandas, Matplotlib</dd></div>
+        </dl>
+        <ul class="capability-list">
+          <li>X-bar and R control charts</li>
+          <li>Four corrected primary Western Electric rules for X-bar data</li>
+          <li>Cp, Cpk, Cpu, Cpl, and estimated process sigma</li>
+          <li>Editable specification limits with validation</li>
+          <li>Chronological signal table and static chart export</li>
+        </ul>
+        <div class="project-actions">
+          <a class="button" href="https://github.com/edwardtorres/spc-dashboard" target="_blank" rel="noreferrer">SOURCE REPOSITORY</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="project-details" aria-label="SPC Dashboard implementation details">
+    <div class="project-copy-grid">
+      <article>
+        <h2>Technical details</h2>
+        <p>The application calculates subgroup statistics, estimates within-subgroup sigma from R-bar and d2, and keeps engineering specification limits separate from statistical control limits. Symmetric zone rules are limited to the X-bar chart; the asymmetric R chart uses its calculated limits.</p>
+        <p>The included dataset models 50 synthetic subgroups of five measurements and intentionally injects special-cause events for demonstration.</p>
+      </article>
+      <article>
+        <h2>Verification &amp; limitations</h2>
+        <p>Thirteen automated regression tests pass locally, covering corrected rule boundaries, same-side requirements, R-chart scope, and specification validation. Remote CI validation remains pending.</p>
+        <p>This is an educational analysis tool, not a manufacturing control or lot-disposition system. The portfolio shows the verified exported chart; the interactive dashboard currently runs locally.</p>
+      </article>
+    </div>
+  </section>
+
+  <nav class="project-pagination" aria-label="Project navigation">
+    <a href="pocket-machinist.html">← PREVIOUS · POCKET MACHINIST</a>
+    <a href="../work.html">ALL WORK</a>
+    <a href="paperdrop.html">NEXT · PAPERDROP →</a>
+  </nav>
+
+  <footer>
+    <nav class="bottom-nav" aria-label="Primary navigation">
+      <a href="../index.html">Home</a>
+      <a href="../work.html" class="active" aria-current="page">Work</a>
+      <a href="../about.html">About</a>
+    </nav>
+  </footer>
+</body>
+</html>

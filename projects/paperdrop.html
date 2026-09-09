@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Paperdrop is a Next.js and TypeScript file-to-PDF converter that processes supported documents and images locally in the browser.">
+  <meta name="theme-color" content="#ffffff">
+  <link rel="canonical" href="https://edwardtorres.dev/projects/paperdrop">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://edwardtorres.dev/projects/paperdrop">
+  <meta property="og:title" content="Paperdrop | Edward Torres">
+  <meta property="og:description" content="A privacy-focused document and image converter with local browser processing and sanitized previews.">
+  <meta property="og:image" content="https://edwardtorres.dev/assets/projects/paperdrop/file-drop.png">
+  <meta property="og:image:alt" content="Paperdrop private browser file-to-PDF interface">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://edwardtorres.dev/assets/projects/paperdrop/file-drop.png">
+  <title>Paperdrop | Edward Torres</title>
+  <link rel="icon" href="../favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <main class="project-grid" id="main-content" tabindex="-1">
+    <div class="project-text">
+      <p class="eyebrow">WEB PRODUCT · PRIVACY</p>
+      <h1>PAPERDROP</h1>
+      <p>A focused file-drop workflow for previewing and exporting supported documents and images as PDFs without an application upload.</p>
+      <p class="tech-stack">Next.js · React · TypeScript · DOMPurify · jsPDF</p>
+    </div>
+    <figure class="project-media">
+      <img src="../assets/projects/paperdrop/file-drop.png" alt="Paperdrop file-drop interface and PDF settings" width="1440" height="1000" decoding="async" fetchpriority="high">
+    </figure>
+  </main>
+
+  <section class="project-snapshot" aria-labelledby="snapshot-title">
+    <div class="snapshot-grid">
+      <figure class="snapshot-visual landscape">
+        <img src="../assets/projects/paperdrop/document-preview.png" alt="Paperdrop previewing a synthetic Markdown document" width="1440" height="1000" loading="lazy" decoding="async">
+      </figure>
+      <div class="snapshot-copy">
+        <p class="eyebrow">PROJECT SNAPSHOT</p>
+        <h2 id="snapshot-title">Useful conversion without a document-processing backend</h2>
+        <dl class="snapshot-meta">
+          <div><dt>Type</dt><dd>Static browser application</dd></div>
+          <div><dt>Status</dt><dd>Public GitHub Pages demo</dd></div>
+          <div><dt>Technologies</dt><dd>Next.js, React, TypeScript, DOMPurify, jsPDF</dd></div>
+        </dl>
+        <ul class="capability-list">
+          <li>DOCX, text, Markdown, HTML, and CSV input</li>
+          <li>JPG, PNG, WebP, GIF, and BMP input</li>
+          <li>Multiple images converted to one PDF page each</li>
+          <li>Sanitized document preview before export</li>
+          <li>Page size, orientation, margin, and image-fit controls</li>
+        </ul>
+        <div class="project-actions">
+          <a class="button" href="https://github.com/edwardtorres/pdf-converter" target="_blank" rel="noreferrer">SOURCE REPOSITORY</a>
+          <a class="button" href="https://edwardtorres.github.io/pdf-converter/" target="_blank" rel="noreferrer">LIVE DEMO</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="project-details" aria-label="Paperdrop implementation details">
+    <div class="details-gallery project-screens single-screen">
+      <img src="../assets/projects/paperdrop/multi-image.png" alt="Paperdrop three-image conversion workflow using generated geometric images" width="1440" height="1000" loading="lazy" decoding="async">
+    </div>
+    <div class="project-copy-grid">
+      <article>
+        <h2>Technical details</h2>
+        <p>Next.js produces a static export. Mammoth handles DOCX structure, Marked parses Markdown, DOMPurify sanitizes converted HTML, and html2pdf.js/jsPDF generate the output. Selected file bytes remain in the browser; the application has no upload backend.</p>
+      </article>
+      <article>
+        <h2>Verification &amp; limitations</h2>
+        <p>Lint, TypeScript, production compilation, and static-page generation passed locally. Browser-local processing reduces exposure to a conversion service but is not an absolute security guarantee; browser extensions, device security, and dependency integrity still matter.</p>
+        <p>Complex Word layouts and fonts may be simplified, files are limited to 30 MB, and output can vary by browser. One moderate transitive DOCX-parser advisory remains pending compatibility tests.</p>
+      </article>
+    </div>
+  </section>
+
+  <nav class="project-pagination" aria-label="Project navigation">
+    <a href="spc-dashboard.html">← PREVIOUS · SPC DASHBOARD</a>
+    <a href="../work.html">ALL WORK</a>
+    <a href="lithography-workbook.html">NEXT · LITHOGRAPHY →</a>
+  </nav>
+
+  <footer>
+    <nav class="bottom-nav" aria-label="Primary navigation">
+      <a href="../index.html">Home</a>
+      <a href="../work.html" class="active" aria-current="page">Work</a>
+      <a href="../about.html">About</a>
+    </nav>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Pocket Machinist combines native SwiftUI and an offline React PWA for machining calculators, references, and shop checklists.">
+  <meta name="theme-color" content="#ffffff">
+  <link rel="canonical" href="https://edwardtorres.dev/projects/pocket-machinist">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://edwardtorres.dev/projects/pocket-machinist">
+  <meta property="og:title" content="Pocket Machinist | Edward Torres">
+  <meta property="og:description" content="Machining calculators, reference tables, and shop checklists across native iOS and an offline web PWA.">
+  <meta property="og:image" content="https://edwardtorres.dev/assets/projects/pocket-machinist/web-home.png">
+  <meta property="og:image:alt" content="Pocket Machinist web home and quick-access tools">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://edwardtorres.dev/assets/projects/pocket-machinist/web-home.png">
+  <title>Pocket Machinist | Edward Torres</title>
+  <link rel="icon" href="../favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <main class="project-grid" id="main-content" tabindex="-1">
+    <div class="project-text">
+      <p class="eyebrow">MACHINING · NATIVE + WEB</p>
+      <h1>POCKET MACHINIST</h1>
+      <p>Calculators, reference tables, and step-by-step shop checklists designed to remain useful without an account or backend.</p>
+      <p class="tech-stack">SwiftUI · React · TypeScript · Vite · PWA</p>
+    </div>
+    <figure class="project-media">
+      <img src="../assets/projects/pocket-machinist/web-home.png" alt="Pocket Machinist web home with calculators and quick-access tools" width="1440" height="900" decoding="async" fetchpriority="high">
+    </figure>
+  </main>
+
+  <section class="project-snapshot" aria-labelledby="snapshot-title">
+    <div class="snapshot-grid">
+      <figure class="snapshot-visual landscape">
+        <img src="../assets/projects/pocket-machinist/web-calculator.png" alt="RPM calculator showing synthetic inputs and a calculated result" width="1440" height="900" loading="lazy" decoding="async">
+      </figure>
+      <div class="snapshot-copy">
+        <p class="eyebrow">PROJECT SNAPSHOT</p>
+        <h2 id="snapshot-title">Shop knowledge expressed through two focused clients</h2>
+        <dl class="snapshot-meta">
+          <div><dt>Type</dt><dd>Native iOS/iPadOS app + installable web PWA</dd></div>
+          <div><dt>Status</dt><dd>Web demo available; native capture pending</dd></div>
+          <div><dt>Technologies</dt><dd>SwiftUI, React, TypeScript, Vite, Workbox</dd></div>
+        </dl>
+        <ul class="capability-list">
+          <li>Machining calculators with formulas, units, and results</li>
+          <li>Drill, tap, thread, fit, finish, G-code, and GD&amp;T references</li>
+          <li>Search, favorites, and recently used tools</li>
+          <li>Saved shop-checklist progress</li>
+          <li>Offline-capable web application shell</li>
+        </ul>
+        <div class="project-actions">
+          <a class="button" href="https://github.com/edwardtorres/pocket-machinist" target="_blank" rel="noreferrer">SOURCE REPOSITORY</a>
+          <a class="button" href="https://edwardtorres.github.io/pocket-machinist/" target="_blank" rel="noreferrer">LIVE WEB APP</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="project-details" aria-label="Pocket Machinist implementation details">
+    <div class="details-gallery project-screens">
+      <img src="../assets/projects/pocket-machinist/web-reference.png" alt="Pocket Machinist drill and tap reference table" width="1440" height="900" loading="lazy" decoding="async">
+      <img src="../assets/projects/pocket-machinist/web-checklist.png" alt="Pocket Machinist CNC setup checklist on a mobile viewport" width="390" height="844" loading="lazy" decoding="async">
+    </div>
+    <div class="project-copy-grid">
+      <article>
+        <h2>Technical details</h2>
+        <p>The repository carries the same product idea across a SwiftUI client targeting iOS 17 and a React/TypeScript PWA. The web client uses Workbox to cache its application shell and bundled data after the first successful load. Preferences, favorites, recents, and checklist state stay on the device.</p>
+      </article>
+      <article>
+        <h2>Verification &amp; limitations</h2>
+        <p>Web lint and production build checks pass locally. Native validation and a native screenshot remain pending because they require macOS and Xcode.</p>
+        <p>Reference values are starting points, not substitutes for machine manuals or qualified judgment. Several reference-data families still need authoritative citations, and native/web feature coverage may differ.</p>
+      </article>
+    </div>
+  </section>
+
+  <nav class="project-pagination" aria-label="Project navigation">
+    <a href="homevault.html">← PREVIOUS · HOMEVAULT</a>
+    <a href="../work.html">ALL WORK</a>
+    <a href="spc-dashboard.html">NEXT · SPC DASHBOARD →</a>
+  </nav>
+
+  <footer>
+    <nav class="bottom-nav" aria-label="Primary navigation">
+      <a href="../index.html">Home</a>
+      <a href="../work.html" class="active" aria-current="page">Work</a>
+      <a href="../about.html">About</a>
+    </nav>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="A responsive React chess game with local play, five computer levels, chess.js rules, a Stockfish worker, clocks, and review mode.">
+  <meta name="theme-color" content="#ffffff">
+  <link rel="canonical" href="https://edwardtorres.dev/projects/chess-game">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://edwardtorres.dev/projects/chess-game">
+  <meta property="og:title" content="Chess Game | Edward Torres">
+  <meta property="og:description" content="Local and five-level computer chess with legal-move feedback, clocks, and post-game review.">
+  <meta property="og:image" content="https://edwardtorres.dev/assets/projects/chess/stockfish-game.png">
+  <meta property="og:image:alt" content="Active Chess Game match against the computer">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://edwardtorres.dev/assets/projects/chess/stockfish-game.png">
+  <title>Chess Game | Edward Torres</title>
+  <link rel="icon" href="../favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <main class="project-grid" id="main-content" tabindex="-1">
+    <div class="project-text">
+      <p class="eyebrow">BROWSER GAME · COMPUTER PLAY</p>
+      <h1>CHESS GAME</h1>
+      <p>A responsive chess interface for pass-and-play or five-level computer matches with clear move feedback and post-game review.</p>
+      <p class="tech-stack">React · Vite · chess.js · Stockfish.js</p>
+    </div>
+    <figure class="project-media">
+      <img src="../assets/projects/chess/stockfish-game.png" alt="Active Chess Game position against the computer" width="1440" height="900" decoding="async" fetchpriority="high">
+    </figure>
+  </main>
+
+  <section class="project-snapshot" aria-labelledby="snapshot-title">
+    <div class="snapshot-grid">
+      <figure class="snapshot-visual landscape">
+        <img src="../assets/projects/chess/game-setup.png" alt="Chess Game mode, color, and five-level difficulty setup" width="1440" height="900" loading="lazy" decoding="async">
+      </figure>
+      <div class="snapshot-copy">
+        <p class="eyebrow">PROJECT SNAPSHOT</p>
+        <h2 id="snapshot-title">Rules-aware play and approachable browser computer matches</h2>
+        <dl class="snapshot-meta">
+          <div><dt>Type</dt><dd>Responsive browser game</dd></div>
+          <div><dt>Status</dt><dd>Public GitHub Pages demo</dd></div>
+          <div><dt>Technologies</dt><dd>React, Vite, chess.js, Stockfish.js</dd></div>
+        </dl>
+        <ul class="capability-list">
+          <li>Local player-versus-player and computer modes</li>
+          <li>Five computer levels and color selection</li>
+          <li>Legal-target, capture, last-move, and check highlights</li>
+          <li>Elapsed clocks and common game controls</li>
+          <li>Checkmate/draw results and review-board mode</li>
+        </ul>
+        <div class="project-actions">
+          <a class="button" href="https://github.com/edwardtorres/chess-game" target="_blank" rel="noreferrer">SOURCE REPOSITORY</a>
+          <a class="button" href="https://edwardtorres.github.io/chess-game/" target="_blank" rel="noreferrer">PLAY ONLINE</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="project-details" aria-label="Chess Game implementation details">
+    <div class="details-gallery project-screens">
+      <img src="../assets/projects/chess/legal-moves.png" alt="Selected chess pawn with legal-move target dots" width="1440" height="900" loading="lazy" decoding="async">
+      <img src="../assets/projects/chess/game-over-review.png" alt="Chess Game checkmate result after normal play" width="1440" height="900" loading="lazy" decoding="async">
+    </div>
+    <div class="project-copy-grid">
+      <article>
+        <h2>Technical details</h2>
+        <p><code>chess.js</code> validates legal moves, checks, castling, en passant, promotion, and game results. A browser-safe asm.js Stockfish build runs in a classic Web Worker, avoiding the cross-origin-isolation requirement of multithreaded WebAssembly engines.</p>
+      </article>
+      <article>
+        <h2>Verification &amp; limitations</h2>
+        <p>Lint and production build checks passed locally. If the engine cannot load or answer, computer mode chooses a random legal move while local two-player play remains available; that fallback is not equivalent to Stockfish analysis.</p>
+        <p>Computer strength is capped for browser responsiveness. Clocks record elapsed time but do not enforce time controls. Online multiplayer, saved games, PGN import/export, sound, and drag-and-drop are not implemented.</p>
+      </article>
+    </div>
+  </section>
+
+  <nav class="project-pagination" aria-label="Project navigation">
+    <a href="lithography-workbook.html">← PREVIOUS · LITHOGRAPHY</a>
+    <a href="../work.html">ALL WORK</a>
+    <span></span>
+  </nav>
+
+  <footer>
+    <nav class="bottom-nav" aria-label="Primary navigation">
+      <a href="../index.html">Home</a>
+      <a href="../work.html" class="active" aria-current="page">Work</a>
+      <a href="../about.html">About</a>
+    </nav>
+  </footer>
+</body>
+</html>

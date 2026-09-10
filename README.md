@@ -1,6 +1,6 @@
 # Edward Torres personal website
 
-A static HTML and CSS portfolio presenting six verified projects while
+A static HTML and CSS portfolio presenting seven verified projects while
 preserving the site's monochrome visual language, bottom navigation,
 asymmetric project-card grid, and shared project-detail structure.
 
@@ -46,6 +46,7 @@ artifacts. No runtime credentials or environment variables are required.
 - `projects/paperdrop.html`
 - `projects/lithography-workbook.html`
 - `projects/chess-game.html`
+- `projects/ikigai.html`
 
 Verified screenshots are organized under `assets/projects/`. Application source
 code remains in its own repositories and is not copied into this site.

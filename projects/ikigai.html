@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Ikigai is an AI-assisted React application for exploring possible directions from what someone loves and what they are good at.">
+  <meta name="theme-color" content="#ffffff">
+  <link rel="canonical" href="https://edwardtorres.dev/projects/ikigai">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://edwardtorres.dev/projects/ikigai">
+  <meta property="og:title" content="Ikigai | Edward Torres">
+  <meta property="og:description" content="An AI-assisted exploration tool built around two starting questions and an interactive four-circle result.">
+  <meta property="og:image" content="https://edwardtorres.dev/assets/projects/ikigai/landing.png">
+  <meta property="og:image:alt" content="Ikigai landing page with a colorful four-circle purpose diagram">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://edwardtorres.dev/assets/projects/ikigai/landing.png">
+  <title>Ikigai | Edward Torres</title>
+  <link rel="icon" href="../favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <main class="project-grid" id="main-content" tabindex="-1">
+    <div class="project-text">
+      <p class="eyebrow">AI-ASSISTED · PURPOSE EXPLORATION</p>
+      <h1>IKIGAI</h1>
+      <p>An AI-assisted web app that helps users explore possible Ikigai directions from two starting questions: what they love and what they are good at.</p>
+      <p class="tech-stack">React · JavaScript · Vite · Gemini · Cloudflare Workers · SVG</p>
+    </div>
+    <figure class="project-media">
+      <img src="../assets/projects/ikigai/landing.png" alt="Ikigai landing page with a colorful four-circle purpose diagram" width="1280" height="720" decoding="async" fetchpriority="high">
+    </figure>
+  </main>
+
+  <section class="project-snapshot" aria-labelledby="snapshot-title">
+    <div class="snapshot-grid">
+      <figure class="snapshot-visual landscape">
+        <img src="../assets/projects/ikigai/diagram.png" alt="Interactive Ikigai results diagram with four overlapping colored circles" width="1280" height="720" loading="lazy" decoding="async">
+      </figure>
+      <div class="snapshot-copy">
+        <p class="eyebrow">PROJECT SNAPSHOT</p>
+        <h2 id="snapshot-title">Two questions become an explorable direction</h2>
+        <dl class="snapshot-meta">
+          <div><dt>Type</dt><dd>AI-assisted responsive web application</dd></div>
+          <div><dt>Status</dt><dd>Live independent Cloudflare deployment</dd></div>
+          <div><dt>Technologies</dt><dd>React, JavaScript, Vite, Gemini, Cloudflare Workers, SVG</dd></div>
+        </dl>
+        <ul class="capability-list">
+          <li>Gemini-generated directions grounded in two user responses</li>
+          <li>User-selected path and structured final interpretation</li>
+          <li>Interactive four-circle SVG diagram</li>
+          <li>Browser-local session persistence and resume</li>
+          <li>PNG, PDF, and plain-text exports</li>
+          <li>Server-side credentials, validation, retries, and rate limiting</li>
+        </ul>
+        <div class="project-actions">
+          <a class="button" href="https://ikigai.edwardtorres.dev" target="_blank" rel="noreferrer">LIVE DEMO</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="project-details" aria-label="Ikigai implementation details">
+    <div class="details-gallery project-screens">
+      <img src="../assets/projects/ikigai/paths.png" alt="Four Gemini-generated Ikigai paths with one selected" width="1280" height="720" loading="lazy" decoding="async">
+      <img src="../assets/projects/ikigai/diagram.png" alt="Ikigai results page showing the interactive diagram and selected detail" width="1280" height="720" loading="lazy" decoding="async">
+    </div>
+    <div class="project-copy-grid">
+      <article>
+        <h2>Experience and AI grounding</h2>
+        <p>Traditional Ikigai exercises ask people to define all four areas before they may know how to answer them. This experience begins with what the user loves and what they are good at, then offers several grounded possibilities for the user to choose rather than declaring a single purpose.</p>
+        <p>The selected direction becomes an interactive interpretation of love, ability, practical need, and potential paid value. The wording remains exploratory, and prompts instruct Gemini not to invent interests, experience, values, or personality traits.</p>
+      </article>
+      <article>
+        <h2>Engineering details</h2>
+        <p>Structured response schemas and runtime validation keep both AI stages predictable. Requests have bounded loading states, retry temporary model failures, and fall back to a second model when appropriate. Answers, paths, and results remain in local browser storage.</p>
+        <p>A native Cloudflare Worker keeps the Gemini credential server-side, serves same-origin API routes, applies request-size and rate limits, and delivers the Vite application with SPA fallback. AI output remains a starting point for reflection and depends on external model availability.</p>
+      </article>
+    </div>
+  </section>
+
+  <nav class="project-pagination" aria-label="Project navigation">
+    <a href="chess-game.html">← PREVIOUS · CHESS GAME</a>
+    <a href="../work.html">ALL WORK</a>
+    <span></span>
+  </nav>
+
+  <footer>
+    <nav class="bottom-nav" aria-label="Primary navigation">
+      <a href="../index.html">Home</a>
+      <a href="../work.html" class="active" aria-current="page">Work</a>
+      <a href="../about.html">About</a>
+    </nav>
+  </footer>
+</body>
+</html>

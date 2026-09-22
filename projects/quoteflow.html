@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="QuoteFlow is a CNC manufacturing quoting and cost-analysis application that models material, setup, production, scrap, margin, and quantity economics.">
+  <meta name="theme-color" content="#ffffff">
+  <link rel="canonical" href="https://edwardtorres.dev/projects/quoteflow">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://edwardtorres.dev/projects/quoteflow">
+  <meta property="og:title" content="QuoteFlow | Edward Torres">
+  <meta property="og:description" content="A CNC manufacturing quote builder with cost modeling, quantity analysis, and browser-local History.">
+  <meta property="og:image" content="https://edwardtorres.dev/assets/projects/quoteflow/placeholder.svg">
+  <meta property="og:image:alt" content="QuoteFlow branded project image; verified application screenshot pending">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://edwardtorres.dev/assets/projects/quoteflow/placeholder.svg">
+  <title>QuoteFlow | Edward Torres</title>
+  <link rel="icon" href="../favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <main class="project-grid" id="main-content" tabindex="-1">
+    <div class="project-text">
+      <p class="eyebrow">MANUFACTURING · DECISION SUPPORT</p>
+      <h1>QUOTEFLOW</h1>
+      <p>I designed and developed QuoteFlow to make CNC job costs easier to see while keeping the quoting workflow fast enough for a small shop. It models production assumptions, margin, and quantity economics in one live interface.</p>
+      <p class="tech-stack">React · TypeScript · Vite · Recharts · Vitest · Cloudflare</p>
+    </div>
+    <figure class="project-media">
+      <img src="../assets/projects/quoteflow/placeholder.svg" alt="QuoteFlow branded project image; verified desktop application screenshot pending" width="1440" height="900" decoding="async" fetchpriority="high">
+    </figure>
+  </main>
+
+  <section class="project-snapshot" aria-labelledby="snapshot-title">
+    <div class="snapshot-grid">
+      <figure class="snapshot-visual landscape">
+        <img src="../assets/projects/quoteflow/placeholder.svg" alt="QuoteFlow image placeholder, to be replaced by a verified unit-cost analysis screenshot" width="1440" height="900" loading="lazy" decoding="async">
+        <figcaption>Verified product screenshots are pending; the live application is available below.</figcaption>
+      </figure>
+      <div class="snapshot-copy">
+        <p class="eyebrow">PROJECT SNAPSHOT</p>
+        <h2 id="snapshot-title">A quote with its cost drivers in view</h2>
+        <dl class="snapshot-meta">
+          <div><dt>Type</dt><dd>Frontend manufacturing analytics application</dd></div>
+          <div><dt>Status</dt><dd>Live independent product · v1.0</dd></div>
+          <div><dt>Technologies</dt><dd>React, TypeScript, Vite, Recharts, Vitest, Cloudflare, browser localStorage</dd></div>
+        </dl>
+        <ul class="capability-list">
+          <li>Scrap-aware material, setup, production, and additional-cost model</li>
+          <li>Suggested price based on target gross margin</li>
+          <li>Quantity scenarios and a unit-cost curve</li>
+          <li>Proportional cost structure and rule-based observations</li>
+          <li>Local quote History with search, duplicate, delete, and JSON export</li>
+        </ul>
+        <div class="project-actions">
+          <a class="button" href="https://quoteflow.edwardtorres.dev/" target="_blank" rel="noopener noreferrer">VIEW LIVE PROJECT</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="project-details" aria-label="QuoteFlow case study">
+    <div class="project-copy-grid">
+      <article>
+        <h2>The problem</h2>
+        <p>A small machining quote is more than material cost multiplied by quantity. Setup time, machine hours, expected scrap, tooling, inspection, outside processing, shipping, shop rates, and target margin all affect the result. Fixed setup cost also has a much larger effect on a 25-part order than on a 500-part order.</p>
+        <p>I wanted an estimator to see those relationships while entering the job, instead of building a price in one place and analyzing it later in another.</p>
+      </article>
+      <article>
+        <h2>The product response</h2>
+        <p>The builder keeps job and production inputs together on the left while the analysis updates on the right. It shows a suggested quote, total manufacturing cost, cost per good part, gross profit and margin, planned parts to run, and stock pieces required.</p>
+        <p>Quantity comparisons and cost visuals sit beside those headline numbers, so an estimator can see both the price and the assumptions driving it.</p>
+      </article>
+    </div>
+
+    <div class="project-copy-grid">
+      <article>
+        <h2>Manufacturing model</h2>
+        <p>I separated the calculation engine from the React interface. It adds material, setup, production, and additional costs to produce total manufacturing cost. Scrap changes the planned production run: for 100 good parts with 5% expected scrap, the model plans 106 parts to run and rounds stock requirements up to whole pieces.</p>
+        <p>Cost per part uses the 100 good parts requested by the customer, not the larger planned run. Suggested selling price uses gross margin: <strong>selling price = total cost ÷ (1 − target margin)</strong>. A 30% margin is not a 30% markup.</p>
+      </article>
+      <article>
+        <h2>Quantity economics</h2>
+        <p>Fixed setup cost is spread across more good parts as order size grows. QuoteFlow recalculates scenarios such as 25, 100, 250, and 500 parts, showing planned production, cost per part, total cost, and suggested quote for each.</p>
+        <p>The unit-cost curve makes that change visible without claiming to optimize production. It helps a shop discuss volume and price with a clearer view of setup-cost amortization.</p>
+      </article>
+    </div>
+
+    <div class="project-copy-grid">
+      <article>
+        <h2>Cost structure and observations</h2>
+        <p>A proportional breakdown separates material, setup, production, and additional costs. It makes the dominant driver visible at a glance. Short observations, such as production being the largest cost driver, are generated from deterministic business rules and the calculated result. They are not AI-generated advice.</p>
+      </article>
+      <article>
+        <h2>Design direction</h2>
+        <p>I combined industrial software, financial analysis, and editorial web design. A warm off-white builder sits beside a charcoal analysis panel; pale green marks the current quantity and key values. Hard grids, square controls, technical monospace labels, restrained motion, and oversized financial numbers make the interface feel suited to manufacturing without looking dated.</p>
+      </article>
+    </div>
+
+    <div class="project-copy-grid">
+      <article>
+        <h2>Application architecture</h2>
+        <p>Pure quote-engine functions calculate results independently of the UI. Quantity scenarios, formatting, and quote insights also live in reusable utilities. React components render those outputs, and the chart is split into a separate production bundle.</p>
+        <p>Saved records contain the source inputs and metadata, not the calculated result. Reopening a quote runs the current engine again, so stored totals cannot become stale after a formula change.</p>
+      </article>
+      <article>
+        <h2>Local-first persistence</h2>
+        <p>QuoteFlow v1 needs no account. A QuoteRepository interface keeps storage calls out of the UI, while its current implementation saves quotes in this browser's localStorage. That makes the first visit immediate and avoids an anonymous shared database.</p>
+        <p>The tradeoff is clear: quotes do not sync between browsers or devices, and clearing browser site data removes them. The app does not present local storage as a cloud backup.</p>
+      </article>
+    </div>
+
+    <div class="project-copy-grid">
+      <article>
+        <h2>History and editing</h2>
+        <p>Users can save or update a quote, search History, reopen it, duplicate it with a new number, delete it after confirmation, or export the source records as JSON. History recalculates displayed quote values rather than persisting totals. An unsaved-change prompt protects edits when moving to another quote or view.</p>
+      </article>
+      <article>
+        <h2>Validation and edge cases</h2>
+        <p>Quote forms are often temporarily incomplete. Someone replacing “100” with “250” may briefly leave the quantity blank. QuoteFlow preserves that editing state and pauses the analysis with an “Awaiting valid input” message until calculations are safe. It avoids showing NaN or Infinity while a field is being edited.</p>
+      </article>
+    </div>
+
+    <div class="project-copy-grid">
+      <article>
+        <h2>Testing and deployment</h2>
+        <p>At v1.0, 39 automated tests across eight files cover manufacturing formulas, margin logic, scenarios, formatting, quote insights, numbering, persistence, and History helpers. Release checks included desktop and mobile widths of 1440, 1024, 768, 390, and 320 pixels.</p>
+        <p>A production Vite build is deployed through Cloudflare on a custom HTTPS subdomain. Hashed assets and social metadata support a stable public release.</p>
+      </article>
+      <article>
+        <h2>What I learned</h2>
+        <p>QuoteFlow brought manufacturing experience, business economics, information systems, frontend engineering, data visualization, and product design into one product. The most useful work was deciding how to represent assumptions and financial logic so a user could understand a job quickly, rather than just producing a number.</p>
+      </article>
+    </div>
+  </section>
+
+  <nav class="project-pagination" aria-label="Project navigation">
+    <a href="homevault.html">← PREVIOUS · HOMEVAULT</a>
+    <a href="../work.html">ALL WORK</a>
+    <a href="pocket-machinist.html">NEXT · POCKET MACHINIST →</a>
+  </nav>
+
+  <footer>
+    <nav class="bottom-nav" aria-label="Primary navigation">
+      <a href="../index.html">Home</a>
+      <a href="../work.html" class="active" aria-current="page">Work</a>
+      <a href="../about.html">About</a>
+    </nav>
+  </footer>
+</body>
+</html>

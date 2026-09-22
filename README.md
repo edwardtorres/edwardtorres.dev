@@ -1,6 +1,6 @@
 # Edward Torres personal website
 
-A static HTML and CSS portfolio presenting eight verified projects while
+A static HTML and CSS portfolio presenting nine projects while
 preserving the site's monochrome visual language, bottom navigation,
 asymmetric project-card grid, and shared project-detail structure.
 
@@ -41,6 +41,7 @@ artifacts. No runtime credentials or environment variables are required.
 ## Project pages
 
 - `projects/homevault.html`
+- `projects/quoteflow.html`
 - `projects/pocket-machinist.html`
 - `projects/spc-dashboard.html`
 - `projects/paperdrop.html`
@@ -49,8 +50,11 @@ artifacts. No runtime credentials or environment variables are required.
 - `projects/ikigai.html`
 - `projects/canvas-calendar.html`
 
-Verified screenshots are organized under `assets/projects/`. Application source
-code remains in its own repositories and is not copied into this site.
+Verified screenshots are organized under `assets/projects/`. The QuoteFlow
+project currently uses a clearly labeled branded placeholder until verified
+product screenshots are supplied; see `assets/projects/quoteflow/README.md`.
+Application source code remains in its own repositories and is not copied into
+this site.
 
 `project1.html` is retained only as a no-index compatibility redirect to the
 HomeVault page.
@@ -59,7 +63,7 @@ HomeVault page.
 
 - All YouTube/video markup and shared video CSS have been removed.
 - Every project uses the same Project Snapshot structure for type, status,
-  capabilities, verified screenshots, source, and genuine live links.
+  capabilities, project visuals, and genuine live links where available.
 - Open Graph images use root-relative local asset paths. Convert them to absolute
   production URLs after the final domain is selected.
 - Resume integration remains pending until a verified resume file is supplied.

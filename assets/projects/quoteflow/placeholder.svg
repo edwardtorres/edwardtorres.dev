@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="900" viewBox="0 0 1440 900" role="img" aria-labelledby="title desc">
+  <title id="title">QuoteFlow branded project-image placeholder</title>
+  <desc id="desc">An abstract warm-white and charcoal composition with the QuoteFlow mark. A verified product screenshot will replace this image.</desc>
+  <rect width="1440" height="900" fill="#20201f"/>
+  <path fill="#ecece8" d="M0 0h720v900H0z"/>
+  <g stroke="#c3c3bd" stroke-width="2">
+    <path d="M0 150h720M0 450h720M0 750h720M240 0v900M480 0v900"/>
+  </g>
+  <g stroke="#454541" stroke-width="2">
+    <path d="M720 150h720M720 450h720M720 750h720M960 0v900M1200 0v900"/>
+  </g>
+  <rect x="594" y="324" width="252" height="252" fill="#20201f" stroke="#ecece8" stroke-width="4"/>
+  <text x="639" y="478" fill="#f0f0eb" font-family="Arial, Helvetica, sans-serif" font-size="105" font-weight="600" letter-spacing="-9">QF</text>
+  <rect x="790" y="518" width="26" height="26" fill="#9ef2c3"/>
+  <text x="74" y="85" fill="#20201f" font-family="Menlo, Consolas, monospace" font-size="23" letter-spacing="4">QUOTEFLOW / V1.0</text>
+  <text x="846" y="85" fill="#f0f0eb" font-family="Menlo, Consolas, monospace" font-size="20" letter-spacing="3">CNC QUOTING SYSTEM</text>
+  <text x="74" y="836" fill="#73736d" font-family="Menlo, Consolas, monospace" font-size="20" letter-spacing="3">PROJECT IMAGE / VERIFIED SCREENSHOT PENDING</text>
+</svg>

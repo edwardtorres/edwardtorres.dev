@@ -1,22 +1,16 @@
 # QuoteFlow screenshots
 
-`placeholder.svg` is a branded placeholder, not an application screenshot. The
-portfolio uses it in the Work card, case-study hero, and Project Snapshot until
-verified images of the deployed QuoteFlow v1.0 application are supplied.
+These are screenshots of the released QuoteFlow v1.0 application supplied on
+September 22, 2026. They are kept at their original dimensions and proportions.
 
-Suggested image files:
+Current image files:
 
-| File | Content | Recommended size |
+| File | Content | Dimensions |
 | --- | --- | --- |
-| `quoteflow-hero.png` | Full desktop application with builder and analysis | 1440 × 900 px |
-| `quoteflow-builder.png` | Quote Builder inputs | 1440 × 900 px |
-| `quoteflow-analysis.png` | Unit-cost curve and cost structure | 1440 × 900 px |
-| `quoteflow-history.png` | Saved quote History | 1440 × 900 px |
-| `quoteflow-mobile.png` | Narrow-screen layout, if useful | 390 × 844 px |
+| `quoteflow-hero.png` | Builder and live suggested quote; case-study hero | 2906 × 1512 px |
+| `quoteflow-builder.png` | Material and production inputs, cost structure, quantity table; Work card and gallery | 2906 × 1512 px |
+| `quoteflow-analysis.png` | Unit-cost curve, observations, and assumptions; Project Snapshot | 1540 × 1580 px |
+| `quoteflow-history.png` | Empty History view and quote search controls | 2906 × 1512 px |
 
-Use real captures from the released application with no private customer data.
-Keep their original proportions; the site's shared styles handle display and
-cropping. Once supplied, replace the placeholder paths in `work.html` and
-`projects/quoteflow.html`, add the strongest supporting captures to the existing
-`project-screens` gallery pattern, and update alt text to describe the actual
-interface shown.
+The desktop views use the application's demo data. A mobile screenshot can be
+added later if useful; 390 × 844 px is a good target for the existing gallery.

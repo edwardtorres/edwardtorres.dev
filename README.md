@@ -50,9 +50,9 @@ artifacts. No runtime credentials or environment variables are required.
 - `projects/ikigai.html`
 - `projects/canvas-calendar.html`
 
-Verified screenshots are organized under `assets/projects/`. The QuoteFlow
-project currently uses a clearly labeled branded placeholder until verified
-product screenshots are supplied; see `assets/projects/quoteflow/README.md`.
+Verified screenshots are organized under `assets/projects/`. QuoteFlow's
+supplied v1.0 captures and their placements are documented in
+`assets/projects/quoteflow/README.md`.
 Application source code remains in its own repositories and is not copied into
 this site.
 

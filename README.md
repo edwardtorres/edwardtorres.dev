@@ -1,6 +1,6 @@
 # Edward Torres personal website
 
-A static HTML and CSS portfolio presenting nine projects while
+A static HTML and CSS portfolio presenting ten projects while
 preserving the site's monochrome visual language, bottom navigation,
 asymmetric project-card grid, and shared project-detail structure.
 
@@ -41,6 +41,7 @@ artifacts. No runtime credentials or environment variables are required.
 ## Project pages
 
 - `projects/homevault.html`
+- `projects/full-body.html`
 - `projects/quoteflow.html`
 - `projects/pocket-machinist.html`
 - `projects/spc-dashboard.html`
@@ -50,7 +51,10 @@ artifacts. No runtime credentials or environment variables are required.
 - `projects/ikigai.html`
 - `projects/canvas-calendar.html`
 
-Verified screenshots are organized under `assets/projects/`. QuoteFlow's
+Verified screenshots are organized under `assets/projects/`. Full Body's four
+desktop captures show the live dashboard, active workout, back anatomy, and
+training calendar; history-based views await representative completed
+workouts. QuoteFlow's
 supplied v1.0 captures and their placements are documented in
 `assets/projects/quoteflow/README.md`.
 Application source code remains in its own repositories and is not copied into

@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="An interactive 3D workout tracker that uses performance history, gradual rep progression, and harder exercise variations to build a full-body program around fixed dumbbells.">
+  <meta name="theme-color" content="#ffffff">
+  <link rel="canonical" href="https://edwardtorres.dev/projects/full-body">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://edwardtorres.dev/projects/full-body">
+  <meta property="og:title" content="Full Body — 3D Dumbbell Workout Tracker | Edward Torres">
+  <meta property="og:description" content="A 3D dumbbell workout tracker that turns fixed-weight training into a progressive full-body program.">
+  <meta property="og:image" content="https://edwardtorres.dev/assets/projects/full-body/dashboard.png">
+  <meta property="og:image:alt" content="Full Body dashboard with a selected chest muscle, 3D anatomical map, and workout plan">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://edwardtorres.dev/assets/projects/full-body/dashboard.png">
+  <title>Full Body — 3D Dumbbell Workout Tracker | Edward Torres</title>
+  <link rel="icon" href="../favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <main class="project-grid" id="main-content" tabindex="-1">
+    <div class="project-text">
+      <p class="eyebrow">WEB PRODUCT · TRAINING</p>
+      <h1>FULL BODY</h1>
+      <p>An interactive 3D dumbbell workout tracker built around a simple constraint: the fixed weights and floor space someone already has.</p>
+      <p class="tech-stack">React · TypeScript · Three.js · React Three Fiber · Vitest · Cloudflare</p>
+    </div>
+    <figure class="project-media">
+      <img src="../assets/projects/full-body/dashboard.png" alt="Full Body dashboard showing the front-facing 3D anatomical muscle map with Chest selected and the current workout plan" width="1440" height="1067" decoding="async" fetchpriority="high">
+    </figure>
+  </main>
+
+  <section class="project-snapshot" aria-labelledby="snapshot-title">
+    <div class="snapshot-grid">
+      <figure class="snapshot-visual landscape full-body-snapshot">
+        <img src="../assets/projects/full-body/active-workout.png" alt="Full Body active workout showing a highlighted chest muscle, floor press instructions, target reps, actual reps, and effort control" width="1440" height="1067" loading="lazy" decoding="async">
+        <figcaption>Set-by-set logging beside the active 3D muscle map.</figcaption>
+      </figure>
+      <div class="snapshot-copy">
+        <p class="eyebrow">PROJECT SNAPSHOT</p>
+        <h2 id="snapshot-title">Progressive training with the weights you own</h2>
+        <dl class="snapshot-meta">
+          <div><dt>Type</dt><dd>Interactive workout web application</dd></div>
+          <div><dt>Status</dt><dd>Released independent product · v1.0.0</dd></div>
+          <div><dt>Technologies</dt><dd>React, TypeScript, Vite, Three.js, React Three Fiber, Drei, Vitest, Cloudflare Workers Static Assets</dd></div>
+        </dl>
+        <ul class="capability-list">
+          <li>Interactive 3D muscle map for choosing workouts and seeing training state</li>
+          <li>Three-day full-body plan with benchmark-based starting targets</li>
+          <li>Set-by-set reps and reps-in-reserve tracking</li>
+          <li>History-based rep targets and harder exercise variations</li>
+          <li>Browser-local history, progress views, and calendar export</li>
+        </ul>
+        <div class="project-actions">
+          <a class="button" href="https://fullbody.edwardtorres.dev/" target="_blank" rel="noopener noreferrer">VIEW LIVE PROJECT</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="project-details" aria-label="Full Body case study">
+    <div class="details-gallery project-screens">
+      <img src="../assets/projects/full-body/back-anatomy.png" alt="Full Body back-facing 3D anatomical map with Upper back selected and a dumbbell row exercise guide" width="1440" height="900" loading="lazy" decoding="async">
+      <img src="../assets/projects/full-body/calendar.png" alt="Full Body training calendar showing three scheduled weekly workouts, start times, and calendar export" width="1440" height="900" loading="lazy" decoding="async">
+    </div>
+
+    <div class="project-copy-grid">
+      <article>
+        <h2>The challenge</h2>
+        <p>How can someone build a progressive full-body routine with only fixed dumbbells and floor space? Adding weight is not always an option. I wanted the next step in training to come from performance rather than a requirement to buy heavier equipment.</p>
+      </article>
+      <article>
+        <h2>The product response</h2>
+        <p>Full Body starts with a benchmark and organizes training into Full Body A, B, and C. Each session records target reps, actual reps, effort, dumbbell weight, and exercise variation. The dashboard keeps the current plan and the muscle map in view so starting a workout takes few steps.</p>
+      </article>
+    </div>
+
+    <div class="project-copy-grid">
+      <article>
+        <h2>One rep at a time</h2>
+        <p>Successful sessions add one total prescribed rep at a time. A three-set target can move from <strong>12 / 12 / 12</strong> to <strong>13 / 12 / 12</strong>, then <strong>13 / 13 / 12</strong>, then <strong>13 / 13 / 13</strong>. Historical results inform the next target without an arbitrary strength score.</p>
+      </article>
+      <article>
+        <h2>Difficulty after the ceiling</h2>
+        <p>When an exercise reaches its rep-range ceiling, the app can unlock a harder movement, such as a paused floor press after the standard floor press. The target returns to a lower rep range for the new variation, giving the user room to progress with the same dumbbells.</p>
+      </article>
+    </div>
+
+    <div class="project-copy-grid">
+      <article>
+        <h2>Anatomy as interaction</h2>
+        <p>The Three.js body is both a control and a record of training state. Muscle regions use stable application IDs for click or tap selection, active and completed states, and Strong/Weak Point views. The anatomy scene loads separately from the main application bundle.</p>
+      </article>
+      <article>
+        <h2>Personal history, not rankings</h2>
+        <p>Progress and Strong/Weak Point views are derived from a user's own completed workouts. They describe trends such as progressing, steady, or stalled, and distinguish finishing a rep range from advancing to a harder variation. They do not compare users to a population.</p>
+      </article>
+    </div>
+
+    <div class="project-copy-grid">
+      <article>
+        <h2>Local-first release</h2>
+        <p>Profile, active workout, history, variations, and recovery check-ins are stored in versioned browser-local repositories. There is no account or workout backend. The calendar exports recurring events as an .ics file rather than syncing to an external service.</p>
+      </article>
+      <article>
+        <h2>Tradeoffs and validation</h2>
+        <p>Browser-local data stays on one device and can be lost if site storage is cleared. The anatomical model is an interactive guide, not a clinical reference. The v1.0.0 release passed 113 automated tests, a production build, responsive browser checks, and a live HTTPS smoke test.</p>
+      </article>
+    </div>
+  </section>
+
+  <nav class="project-pagination" aria-label="Project navigation">
+    <a href="homevault.html">← PREVIOUS · HOMEVAULT</a>
+    <a href="../work.html">ALL WORK</a>
+    <a href="quoteflow.html">NEXT · QUOTEFLOW →</a>
+  </nav>
+
+  <footer>
+    <nav class="bottom-nav" aria-label="Primary navigation">
+      <a href="../index.html">Home</a>
+      <a href="../work.html" class="active" aria-current="page">Work</a>
+      <a href="../about.html">About</a>
+    </nav>
+  </footer>
+</body>
+</html>

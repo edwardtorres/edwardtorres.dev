@@ -1,6 +1,6 @@
 # Edward Torres personal website
 
-A static HTML and CSS portfolio presenting ten projects while
+A static HTML and CSS portfolio presenting eleven projects while
 preserving the site's monochrome visual language, bottom navigation,
 asymmetric project-card grid, and shared project-detail structure.
 
@@ -42,6 +42,7 @@ artifacts. No runtime credentials or environment variables are required.
 
 - `projects/homevault.html`
 - `projects/full-body.html`
+- `projects/full-stretch.html`
 - `projects/quoteflow.html`
 - `projects/pocket-machinist.html`
 - `projects/spc-dashboard.html`
@@ -57,6 +58,9 @@ training calendar; history-based views await representative completed
 workouts. QuoteFlow's
 supplied v1.0 captures and their placements are documented in
 `assets/projects/quoteflow/README.md`.
+Full Stretch's four real app captures show the dashboard, guided static stretch,
+programs and weekly schedule, and Mobility warm-up overview. Capture provenance
+is documented in `assets/projects/full-stretch/README.md`.
 Application source code remains in its own repositories and is not copied into
 this site.
 

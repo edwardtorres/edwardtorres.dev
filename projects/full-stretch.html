@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="An interactive 3D flexibility and mobility tracker with guided stretching, dynamic warm-ups, resumable timers, weekly scheduling, and history-based coverage insights.">
+  <meta name="theme-color" content="#ffffff">
+  <link rel="canonical" href="https://edwardtorres.dev/projects/full-stretch">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://edwardtorres.dev/projects/full-stretch">
+  <meta property="og:title" content="Full Stretch — 3D Flexibility &amp; Mobility Tracker | Edward Torres">
+  <meta property="og:description" content="Guided stretching, dynamic warm-ups, and recorded consistency around an interactive 3D body.">
+  <meta property="og:image" content="https://edwardtorres.dev/assets/projects/full-stretch/dashboard.jpg">
+  <meta property="og:image:alt" content="Full Stretch dashboard showing the 3D anatomical region map and daily stretching plan">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://edwardtorres.dev/assets/projects/full-stretch/dashboard.jpg">
+  <title>Full Stretch — 3D Flexibility &amp; Mobility Tracker | Edward Torres</title>
+  <link rel="icon" href="../favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <main class="project-grid" id="main-content" tabindex="-1">
+    <div class="project-text">
+      <p class="eyebrow">WEB PRODUCT · FLEXIBILITY &amp; MOBILITY</p>
+      <h1>FULL STRETCH</h1>
+      <p>An interactive 3D flexibility and mobility tracker that connects a body region to a guided session, then makes recorded consistency visible over time.</p>
+      <p class="tech-stack">React · TypeScript · Three.js · React Three Fiber · Vitest · Cloudflare</p>
+    </div>
+    <figure class="project-media">
+      <img src="../assets/projects/full-stretch/dashboard.jpg" alt="Full Stretch dashboard showing the front-facing anatomical map with Quadriceps selected, today's Daily 10 program, and weekly stretching summary" width="1440" height="1765" decoding="async" fetchpriority="high">
+    </figure>
+  </main>
+
+  <section class="project-snapshot" aria-labelledby="snapshot-title">
+    <div class="snapshot-grid">
+      <figure class="snapshot-visual landscape">
+        <img src="../assets/projects/full-stretch/static-session.png" alt="Full Stretch Supine Hamstring Stretch with a selected posterior body region, setup and hold diagrams, side and set controls, and ready 30-second timer" width="1280" height="1224" loading="lazy" decoding="async">
+        <figcaption>Region selection, visual guidance, and explicit hold steps in one session.</figcaption>
+      </figure>
+      <div class="snapshot-copy">
+        <p class="eyebrow">PROJECT SNAPSHOT</p>
+        <h2 id="snapshot-title">From a body region to a guided session</h2>
+        <dl class="snapshot-meta">
+          <div><dt>Type</dt><dd>Interactive flexibility and mobility web application</dd></div>
+          <div><dt>Status</dt><dd>Released independent product · v1.0.0</dd></div>
+          <div><dt>Technologies</dt><dd>React, TypeScript, Vite, Three.js, React Three Fiber, Drei, Vitest, Cloudflare Workers Static Assets</dd></div>
+        </dl>
+        <ul class="capability-list">
+          <li>Interactive front/back anatomy with equivalent text region controls</li>
+          <li>Targeted stretches and Quick 5 / Daily 10 / Full 20 routines</li>
+          <li>Persistent hold timers with explicit side and set transitions</li>
+          <li>Dynamic warm-ups with timed movements and manual rep confirmation</li>
+          <li>Weekly schedules, local history, coverage, and consistency milestones</li>
+        </ul>
+        <div class="project-actions">
+          <a class="button" href="https://fullstretch.edwardtorres.dev/" target="_blank" rel="noopener noreferrer">VIEW LIVE PROJECT</a>
+          <a class="button" href="https://github.com/edwardtorres/full-stretch" target="_blank" rel="noopener noreferrer">VIEW SOURCE</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="project-details" aria-label="Full Stretch case study">
+    <div class="details-gallery project-screens">
+      <img src="../assets/projects/full-stretch/programs.png" alt="Full Stretch program choices with planned hold times and a weekly schedule showing Tuesday and Thursday Daily 10 and Saturday Full 20" width="1280" height="1674" loading="lazy" decoding="async">
+      <img src="../assets/projects/full-stretch/mobility.png" alt="Full Stretch Full Body Warm-Up overview listing eight movements, from March in Place through Ankle Rock, with timed and repetition prescriptions" width="1280" height="1324" loading="lazy" decoding="async">
+    </div>
+
+    <div class="project-copy-grid">
+      <article>
+        <h2>The challenge</h2>
+        <p>A generic exercise list or standalone timer leaves the user to connect a body region to a session and remember what they have included recently. I wanted a fast way to choose an area, understand the movement, and see the pattern of recorded practice.</p>
+      </article>
+      <article>
+        <h2>The product response</h2>
+        <p>Full Stretch starts from an anatomical region or a ready-made routine. Static stretching combines setup and hold diagrams, a timer, and explicit side and set steps. Mobility offers a separate sequence of dynamic movements with timed steps and user-confirmed repetitions.</p>
+      </article>
+    </div>
+
+    <div class="project-copy-grid">
+      <article>
+        <h2>Anatomy as interaction</h2>
+        <p>The front/back Three.js map connects region selection to the matching stretch. Today and Coverage views derive their colors from recorded activity. Equivalent text controls offer another way to choose every region, and the anatomy scene loads separately from the main application.</p>
+      </article>
+      <article>
+        <h2>A timer that survives interruption</h2>
+        <p>Timestamp-based session state reconciles pauses, elapsed time, and reloads. Finishing a hold does not automatically start the next side or set: the user explicitly advances. Flexibility and Mobility have distinct activity engines behind one resumable session slot, with validation that prevents duplicate results.</p>
+      </article>
+    </div>
+
+    <div class="project-copy-grid">
+      <article>
+        <h2>Consistency with context</h2>
+        <p>Weekly schedule snapshots preserve the plan used for each week. Completed sessions drive coverage, Complete Weeks, streaks, and milestones. Missing historical schedules are not invented, and warm-up activity stays separate from static stretch coverage.</p>
+      </article>
+      <article>
+        <h2>Honest feedback</h2>
+        <p>Coverage describes recorded frequency, not anatomical health or measured flexibility. Baseline comparisons reflect the user's own self-reported responses. The interface keeps those assessments separate from activity history and makes no clinical or injury-prevention claims.</p>
+      </article>
+    </div>
+
+    <div class="project-copy-grid">
+      <article>
+        <h2>A companion with its own architecture</h2>
+        <p>Full Stretch complements Full Body as a separate product. It uses validated, versioned browser storage for profile, active session, history, and weekly plans. No account is required, and there is no shared fitness backend or automatic data exchange between the two apps. Clearing site storage removes local records.</p>
+      </article>
+      <article>
+        <h2>Release and validation</h2>
+        <p>The v1.0.0 release passed 285 automated tests, a production build, type checking, and live HTTPS workflow checks. Responsive checks reached 320 pixels. The release also includes keyboard-accessible controls, native dialogs, and reduced-motion handling; a formal accessibility certification is not claimed.</p>
+      </article>
+    </div>
+  </section>
+
+  <nav class="project-pagination" aria-label="Project navigation">
+    <a href="full-body.html">← PREVIOUS · FULL BODY</a>
+    <a href="../work.html">ALL WORK</a>
+    <a href="quoteflow.html">NEXT · QUOTEFLOW →</a>
+  </nav>
+
+  <footer>
+    <nav class="bottom-nav" aria-label="Primary navigation">
+      <a href="../index.html">Home</a>
+      <a href="../work.html" class="active" aria-current="page">Work</a>
+      <a href="../about.html">About</a>
+    </nav>
+  </footer>
+</body>
+</html>

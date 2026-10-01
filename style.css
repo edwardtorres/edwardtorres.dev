@@ -392,6 +392,12 @@ footer {
   border-radius: 8px;
 }
 
+.project-media.az900-overview img {
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  object-position: top;
+}
+
 .wide-chart {
   padding: clamp(16px, 3vw, 36px);
   border: 1px solid var(--line);

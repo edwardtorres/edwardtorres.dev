@@ -1,6 +1,6 @@
 # Edward Torres personal website
 
-A static HTML and CSS portfolio presenting eleven projects while
+A static HTML and CSS portfolio presenting twelve projects while
 preserving the site's monochrome visual language, bottom navigation,
 asymmetric project-card grid, and shared project-detail structure.
 
@@ -41,6 +41,7 @@ artifacts. No runtime credentials or environment variables are required.
 ## Project pages
 
 - `projects/homevault.html`
+- `projects/az900-study.html`
 - `projects/full-body.html`
 - `projects/full-stretch.html`
 - `projects/quoteflow.html`
@@ -61,8 +62,16 @@ supplied v1.0 captures and their placements are documented in
 Full Stretch's four real app captures show the dashboard, guided static stretch,
 programs and weekly schedule, and Mobility warm-up overview. Capture provenance
 is documented in `assets/projects/full-stretch/README.md`.
-Application source code remains in its own repositories and is not copied into
-this site.
+Application source code remains in its own repositories. AZ-900 Study's built
+static files are included under `az900/`, with a scoped Content-Security-Policy
+and service-worker cache rules in `_headers`. Open it at
+`https://edwardtorres.dev/az900/`; its project page appears in Work.
+
+To update AZ-900 Study, run `npm run audit` in its source repository, then
+`node scripts/copy-to-site.mjs "<portfolio checkout>"`. Commit the updated
+`az900/` folder and push `main` to deploy through Cloudflare Pages. Progress is
+saved per browser; export/import transfers it between devices. Screenshot
+provenance is recorded in `assets/projects/az900-study/README.md`.
 
 `project1.html` is retained only as a no-index compatibility redirect to the
 HomeVault page.

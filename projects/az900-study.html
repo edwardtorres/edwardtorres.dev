@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="A game-style AZ-900 Azure Fundamentals study app with 57 objectives, 233 original practice questions, daily reviews, and a timed mock exam.">
+  <meta name="theme-color" content="#ffffff">
+  <link rel="canonical" href="https://edwardtorres.dev/projects/az900-study">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://edwardtorres.dev/projects/az900-study">
+  <meta property="og:title" content="AZ-900 Study | Edward Torres">
+  <meta property="og:description" content="Bring a world map online by learning Azure concepts, passing Boss Battles, and practicing a 50-question Certification Raid.">
+  <meta property="og:image" content="https://edwardtorres.dev/assets/projects/az900-study/world-map.png">
+  <meta property="og:image:alt" content="AZ-900 Study world map and Azure learning regions">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://edwardtorres.dev/assets/projects/az900-study/world-map.png">
+  <title>AZ-900 Study | Edward Torres</title>
+  <link rel="icon" href="../favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../style.css?v=az900-20260930">
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <main class="project-grid" id="main-content" tabindex="-1">
+    <div class="project-text">
+      <p class="eyebrow">AZURE · LEARNING TOOL</p>
+      <h1>AZ-900 STUDY</h1>
+      <p>A game-style study app for Microsoft's Azure Fundamentals exam. Power up learning regions, defeat chapter bosses, and test your preparation in a timed Certification Raid.</p>
+      <p class="tech-stack">React · TypeScript · Vite · Tailwind CSS · PWA</p>
+      <div class="project-actions">
+        <a class="button" href="../az900/">OPEN STUDY APP</a>
+      </div>
+    </div>
+    <figure class="project-media az900-overview">
+      <img src="../assets/projects/az900-study/world-map.png" alt="The study app's world map with cloud-concept and Azure-service regions" width="1024" height="2216" decoding="async" fetchpriority="high">
+    </figure>
+  </main>
+
+  <section class="project-snapshot" aria-labelledby="snapshot-title">
+    <div class="snapshot-grid">
+      <figure class="snapshot-visual">
+        <img src="../assets/projects/az900-study/boss-battle.png" alt="A chapter Boss Battle displaying a practice question and combat progress" width="1170" height="2532" loading="lazy" decoding="async">
+        <figcaption>Mastery comes from correct answers and test scores.</figcaption>
+      </figure>
+      <div class="snapshot-copy">
+        <p class="eyebrow">PROJECT SNAPSHOT</p>
+        <h2 id="snapshot-title">Study, recall, review, and practice under exam conditions</h2>
+        <dl class="snapshot-meta">
+          <div><dt>Type</dt><dd>Interactive certification study app</dd></div>
+          <div><dt>Status</dt><dd>Public app; browser-local progress and offline support</dd></div>
+          <div><dt>Technologies</dt><dd>React 19, TypeScript, Vite, Tailwind CSS, Vitest</dd></div>
+        </dl>
+        <ul class="capability-list">
+          <li>57 objectives across 3 domains and 11 chapters</li>
+          <li>233 original questions in five question styles</li>
+          <li>Power-up checks and chapter Boss Battles</li>
+          <li>Daily reviews, spaced repetition, and weak-spot drills</li>
+          <li>50-question, 45-minute mock exam with feedback after submission</li>
+          <li>Progress export/import and an installable offline app</li>
+        </ul>
+        <div class="project-actions">
+          <a class="button" href="../az900/">OPEN STUDY APP</a>
+          <a class="button" href="https://github.com/edwardtorres/az900-study" target="_blank" rel="noreferrer">SOURCE REPOSITORY</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="project-details" aria-label="AZ-900 Study implementation details">
+    <div class="details-gallery project-screens">
+      <img src="../assets/projects/az900-study/certification-raid.png" alt="Certification Raid question navigator for a timed mock exam" width="780" height="2102" loading="lazy" decoding="async">
+      <img src="../assets/projects/az900-study/profile-transfer.png" alt="Profile page with saved progress and export/import controls" width="1170" height="2532" loading="lazy" decoding="async">
+    </div>
+    <div class="project-copy-grid">
+      <article>
+        <h2>Technical details</h2>
+        <p>Game rules and storage normalization are tested independently from the interface. Question banks and notes load on demand, while a service worker caches the app for offline study. Hash-based routing and relative asset URLs allow the build to run under this site's <code>/az900/</code> path.</p>
+        <p>The release audit passes type checking, lint, 176 unit tests, the production build, and automated content checks. Content follows the July 20, 2026 skills outline, with Microsoft Learn links and verification flags for facts that may change.</p>
+      </article>
+      <article>
+        <h2>Progress &amp; limitations</h2>
+        <p>Progress stays in each browser and does not automatically sync across devices. Use Profile's export/import controls to transfer a save. Clearing site storage can remove progress, so keep an export as a backup.</p>
+        <p>The mock exam score is an estimate, and this is an independent practice tool. Microsoft exam content and product details can change; recheck flagged facts against the linked sources. Offline use requires an initial online visit.</p>
+      </article>
+    </div>
+  </section>
+
+  <nav class="project-pagination" aria-label="Project navigation">
+    <a href="homevault.html">← PREVIOUS · HOMEVAULT</a>
+    <a href="../work.html">ALL WORK</a>
+    <a href="full-body.html">NEXT · FULL BODY →</a>
+  </nav>
+
+  <footer>
+    <nav class="bottom-nav" aria-label="Primary navigation">
+      <a href="../index.html">Home</a>
+      <a href="../work.html" class="active" aria-current="page">Work</a>
+      <a href="../about.html">About</a>
+    </nav>
+  </footer>
+</body>
+</html>

@@ -14,3 +14,31 @@
 
 /style.css
   Cache-Control: public, max-age=3600, must-revalidate
+
+# The portfolio blocks scripts; detach that policy before attaching the app policy.
+/az900/*
+  ! Content-Security-Policy
+  Content-Security-Policy: default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data:; connect-src 'self' https://fonts.googleapis.com https://fonts.gstatic.com; manifest-src 'self'; worker-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self'; frame-ancestors 'none'; upgrade-insecure-requests
+  Cross-Origin-Opener-Policy: same-origin
+
+/az900/
+  Cache-Control: no-cache
+
+/az900/index.html
+  Cache-Control: no-cache
+
+/az900/sw.js
+  Cache-Control: no-cache
+
+/az900/manifest.webmanifest
+  Content-Type: application/manifest+json
+  Cache-Control: no-cache
+
+/az900/assets/*
+  Cache-Control: public, max-age=31536000, immutable
+
+/az900/icons/*
+  Cache-Control: public, max-age=86400
+
+/az900/favicon.svg
+  Cache-Control: public, max-age=86400

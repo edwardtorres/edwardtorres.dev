@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <title>AZ-900 Study</title>
+  <rect width="512" height="512" rx="112" fill="#080e1c"/>
+  <!-- Outer ring: the world coming online -->
+  <path d="M256 70 442 256 256 442 70 256Z" fill="none" stroke="#45bcff" stroke-width="34" stroke-linejoin="round"/>
+  <!-- Core -->
+  <path d="M256 170 342 256 256 342 170 256Z" fill="#45bcff"/>
+  <!-- Online node -->
+  <circle cx="378" cy="134" r="38" fill="#40e3a4" stroke="#080e1c" stroke-width="16"/>
+</svg>

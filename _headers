@@ -28,7 +28,8 @@
   Cache-Control: no-cache
 
 /az900/sw.js
-  Cache-Control: no-cache
+  Cache-Control: no-cache, no-store, must-revalidate
+  Cloudflare-CDN-Cache-Control: no-store
 
 /az900/manifest.webmanifest
   Content-Type: application/manifest+json

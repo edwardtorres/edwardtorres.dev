@@ -314,6 +314,27 @@ footer {
   line-height: 1.4;
 }
 
+/* Keep wrapping titles and descriptions together in the center of the card. */
+.project-copy {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 1;
+  display: grid;
+  gap: 16px;
+  width: 88%;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+}
+
+.project-copy .project-title,
+.project-copy .project-tagline {
+  position: static;
+  width: 100%;
+  transform: none;
+  text-wrap: balance;
+}
+
 .gallery-item:hover img,
 .gallery-item:focus-visible img {
   opacity: 0.35;

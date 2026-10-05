@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="A Databricks Data Analyst Associate study app with 9 chapters, 252 original questions, 39 SQL challenges, 15 interactive labs, and timed mock exams.">
+  <meta name="theme-color" content="#ffffff">
+  <link rel="canonical" href="https://edwardtorres.dev/projects/databricks-study">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://edwardtorres.dev/projects/databricks-study">
+  <meta property="og:title" content="Databricks Study | Edward Torres">
+  <meta property="og:description" content="Learn through lessons, SQL challenges, interactive labs, spaced review, and a weighted 45-question Boss Battle.">
+  <meta property="og:image" content="https://edwardtorres.dev/assets/projects/databricks-study/home.jpg">
+  <meta property="og:image:alt" content="Lakehouse Quest study app with SQL Arena, labs, review, and Boss Battle">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://edwardtorres.dev/assets/projects/databricks-study/home.jpg">
+  <title>Databricks Study | Edward Torres</title>
+  <link rel="icon" href="../favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <main class="project-grid" id="main-content" tabindex="-1">
+    <div class="project-text">
+      <p class="eyebrow">DATABRICKS · LEARNING TOOL</p>
+      <h1>DATABRICKS STUDY</h1>
+      <p>A game-style study app for the Databricks Certified Data Analyst Associate exam. Learn through short lessons, experiment with SQL on a retail dataset, explore interactive labs, and test your preparation in a timed Boss Battle.</p>
+      <p class="tech-stack">React · JavaScript · Vite · Tailwind CSS · SQL.js</p>
+      <div class="project-actions">
+        <a class="button" href="../databricks/">OPEN STUDY APP</a>
+      </div>
+    </div>
+    <figure class="project-media">
+      <img src="../assets/projects/databricks-study/home.jpg" alt="Lakehouse Quest home screen with daily progress, SQL Arena, labs, review, and mock exam" width="1265" height="712" decoding="async" fetchpriority="high">
+    </figure>
+  </main>
+
+  <section class="project-snapshot" aria-labelledby="snapshot-title">
+    <div class="snapshot-grid">
+      <figure class="snapshot-visual landscape">
+        <img src="../assets/projects/databricks-study/chapters.jpg" alt="Databricks exam chapter menu with platform, managing data, importing, querying, and analyzing topics" width="1265" height="712" loading="lazy" decoding="async">
+        <figcaption>One chapter per exam section, with lessons and practice.</figcaption>
+      </figure>
+      <div class="snapshot-copy">
+        <p class="eyebrow">PROJECT SNAPSHOT</p>
+        <h2 id="snapshot-title">Study, experiment, review, and practice under exam conditions</h2>
+        <dl class="snapshot-meta">
+          <div><dt>Type</dt><dd>Interactive certification study app</dd></div>
+          <div><dt>Status</dt><dd>Public app; browser-local progress</dd></div>
+          <div><dt>Technologies</dt><dd>React 19, JavaScript, Vite, Tailwind CSS, SQL.js, Playwright</dd></div>
+        </dl>
+        <ul class="capability-list">
+          <li>9 chapters covering every exam section</li>
+          <li>252 original questions with explanations for every answer</li>
+          <li>39 SQL challenges on a deliberately messy retail dataset</li>
+          <li>15 interactive labs for catalogs, ingestion, joins, dashboards, Genie, modeling, and permissions</li>
+          <li>XP, daily goals, streaks, and spaced repetition</li>
+          <li>45-question, 90-minute mock exam weighted by the official exam sections</li>
+          <li>Progress export/import for transferring a save between browsers</li>
+        </ul>
+        <div class="project-actions">
+          <a class="button" href="../databricks/">OPEN STUDY APP</a>
+          <a class="button" href="https://github.com/edwardtorres/Databrick-Analyst-study-duide" target="_blank" rel="noreferrer">SOURCE REPOSITORY</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="project-details" aria-label="Databricks Study implementation details">
+    <div class="project-copy-grid">
+      <article>
+        <h2>Technical details</h2>
+        <p>The app runs entirely in the browser. SQL.js provides a SQLite engine with selected Databricks-style SQL adaptations. Chapter content, labs, and SQL practice are split into separate downloads. Hash routing and relative asset paths let the app run under this site's <code>/databricks/</code> path.</p>
+        <p>The release review passed 153 unit tests, 77 development/production browser checks, and the production build. Content targets the October 30, 2025 exam guide, with verification flags for two documentation ambiguities. The home page links to the official exam page and guide.</p>
+      </article>
+      <article>
+        <h2>Progress &amp; limitations</h2>
+        <p>Progress stays in each browser and does not automatically sync across devices. Export a backup before clearing site storage or moving devices. The app validates imported saves and warns when browser storage is unavailable.</p>
+        <p>The SQL sandbox and labs are learning simulations, not a connected Databricks workspace. This is independent practice material. The app's 80% mock-exam target is a study target, not an official passing score. Recheck official sources before taking the exam. Full offline support is not implemented.</p>
+      </article>
+    </div>
+  </section>
+
+  <nav class="project-pagination" aria-label="Project navigation">
+    <a href="az900-study.html">← PREVIOUS · AZ-900 STUDY</a>
+    <a href="../work.html">ALL WORK</a>
+    <a href="full-body.html">NEXT · FULL BODY →</a>
+  </nav>
+
+  <footer>
+    <nav class="bottom-nav" aria-label="Primary navigation">
+      <a href="../index.html">Home</a>
+      <a href="../work.html" class="active" aria-current="page">Work</a>
+      <a href="../about.html">About</a>
+    </nav>
+  </footer>
+</body>
+</html>

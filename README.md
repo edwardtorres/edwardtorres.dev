@@ -1,6 +1,6 @@
 # Edward Torres personal website
 
-A static HTML and CSS portfolio presenting twelve projects while
+A static HTML and CSS portfolio presenting thirteen projects while
 preserving the site's monochrome visual language, bottom navigation,
 asymmetric project-card grid, and shared project-detail structure.
 
@@ -42,6 +42,7 @@ artifacts. No runtime credentials or environment variables are required.
 
 - `projects/homevault.html`
 - `projects/az900-study.html`
+- `projects/databricks-study.html`
 - `projects/full-body.html`
 - `projects/full-stretch.html`
 - `projects/quoteflow.html`
@@ -66,6 +67,15 @@ Application source code remains in its own repositories. AZ-900 Study's built
 static files are included under `az900/`, with a scoped Content-Security-Policy
 and service-worker cache rules in `_headers`. Open it at
 `https://edwardtorres.dev/az900/`; its project page appears in Work.
+
+Databricks Study (Lakehouse Quest) is published under `databricks/`, with a
+scoped Content-Security-Policy allowing its scripts and WebAssembly SQL engine.
+Its source remains in `edwardtorres/Databrick-Analyst-study-duide`. Build the source
+with `npm run build`, replace the contents of `databricks/` with that build's
+`dist/`, and push `main` to publish. Keep `index.html` and `chunk-map.json` fresh
+while caching hashed assets immutably. The app is browser-local and does not
+provide full offline/PWA support. Verified screenshots are under
+`assets/projects/databricks-study/`.
 
 To update AZ-900 Study, run `npm run audit` in its source repository, then
 `node scripts/copy-to-site.mjs "<portfolio checkout>"`. Commit the updated

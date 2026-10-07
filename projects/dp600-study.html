@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Fabric Mill is a DP-600 Microsoft Fabric study game with a prerequisite skill map, 471 original questions, 109 puzzles, 15 hands-on labs, and timed mock exams.">
+  <meta name="theme-color" content="#ffffff">
+  <link rel="canonical" href="https://edwardtorres.dev/projects/dp600-study">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://edwardtorres.dev/projects/dp600-study">
+  <meta property="og:title" content="DP-600 Study · Fabric Mill | Edward Torres">
+  <meta property="og:description" content="Learn Microsoft Fabric through a mill of connected skills, query puzzles, spaced review, hands-on labs, and timed mock exams.">
+  <meta property="og:image" content="https://edwardtorres.dev/assets/projects/dp600-study/desktop-map.png">
+  <meta property="og:image:alt" content="Fabric Mill prerequisite skill map and learning progress">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://edwardtorres.dev/assets/projects/dp600-study/desktop-map.png">
+  <title>DP-600 Study · Fabric Mill | Edward Torres</title>
+  <link rel="icon" href="../favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  <main class="project-grid" id="main-content" tabindex="-1">
+    <div class="project-text">
+      <p class="eyebrow">MICROSOFT FABRIC · LEARNING TOOL</p>
+      <h1>DP-600 STUDY</h1>
+      <p>Fabric Mill turns preparation for Microsoft's Fabric Analytics Engineer exam into a working textile mill. Each machine represents a skill: study its notes, pass its checks, and unlock the machines it feeds.</p>
+      <p class="tech-stack">React · TypeScript · Vite · Tailwind CSS · Offline PWA</p>
+      <div class="project-actions">
+        <a class="button" href="../apps/fabric-mill/">OPEN STUDY APP</a>
+      </div>
+    </div>
+    <figure class="project-media">
+      <img src="../assets/projects/dp600-study/desktop-map.png" alt="Fabric Mill map showing learning floors, connected machines, and demonstration progress" width="1440" height="1000" decoding="async" fetchpriority="high">
+    </figure>
+  </main>
+  <section class="project-snapshot" aria-labelledby="snapshot-title">
+    <div class="snapshot-grid">
+      <figure class="snapshot-visual landscape">
+        <img src="../assets/projects/dp600-study/desktop-notes.png" alt="A machine's study notes with Microsoft Learn references and practice controls" width="1440" height="1000" loading="lazy" decoding="async">
+        <figcaption>Skills unlock through passing checks; progress shown is for demonstration.</figcaption>
+      </figure>
+      <div class="snapshot-copy">
+        <p class="eyebrow">PROJECT SNAPSHOT</p>
+        <h2 id="snapshot-title">Build skills, test recall, and practice under exam conditions</h2>
+        <dl class="snapshot-meta">
+          <div><dt>Type</dt><dd>Interactive certification study game</dd></div>
+          <div><dt>Status</dt><dd>Public app; browser-local progress and offline support</dd></div>
+          <div><dt>Technologies</dt><dd>React 19, TypeScript, Vite, Tailwind CSS, Vitest, Playwright</dd></div>
+        </dl>
+        <ul class="capability-list">
+          <li>Prerequisite skill map spanning data preparation, semantic models, security, and governance</li>
+          <li>471 original questions, six case studies, and notes citing Microsoft Learn</li>
+          <li>109 puzzles covering SQL, KQL, DAX, access control, and deployment rules</li>
+          <li>15 hands-on labs for a Microsoft Fabric trial</li>
+          <li>Spaced daily review, Weak Spots, and mastery checks</li>
+          <li>50-question, 100-minute mock exams with answer review</li>
+          <li>Installable offline app with save export/import</li>
+        </ul>
+        <div class="project-actions">
+          <a class="button" href="../apps/fabric-mill/">OPEN STUDY APP</a>
+          <a class="button" href="https://github.com/edwardtorres/DP-600-Study-Guide" target="_blank" rel="noreferrer">SOURCE REPOSITORY</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="project-details" aria-label="Fabric Mill implementation details">
+    <div class="details-gallery project-screens">
+      <img src="../assets/projects/dp600-study/phone-map.png" alt="Fabric Mill map and study progress on a phone" width="780" height="1688" loading="lazy" decoding="async">
+      <img src="../assets/projects/dp600-study/phone-mock.png" alt="A timed mock exam with a case study on a phone" width="780" height="1688" loading="lazy" decoding="async">
+    </div>
+    <div class="project-copy-grid">
+      <article>
+        <h2>Technical details</h2>
+        <p>Game state, scoring, review intervals, and readiness are derived from a versioned browser save. Typed content loads in separate chunks, and a service worker caches the app for offline study after the first visit. The app runs under this site's <code>/apps/fabric-mill/</code> path.</p>
+        <p>Automated checks cover game rules, save migrations, puzzle evaluators, content coverage, and component behavior. Browser tests exercise desktop and phone flows, accessibility, production security headers, and offline use.</p>
+      </article>
+      <article>
+        <h2>Progress &amp; study notes</h2>
+        <p>Progress stays in each browser. Use Settings to export a backup or import a save on another device. Hands-on labs require a Fabric trial, and some steps require Windows tools; the lab instructions identify those requirements.</p>
+        <p>Fabric Mill is an independent study aid and is not affiliated with or endorsed by Microsoft. Its questions are original practice material. Use the linked Microsoft Learn sources and official exam guide to check current requirements; mock scores do not guarantee an exam result.</p>
+      </article>
+    </div>
+  </section>
+  <nav class="project-pagination" aria-label="Project navigation">
+    <a href="databricks-study.html">← PREVIOUS · DATABRICKS STUDY</a>
+    <a href="../work.html">ALL WORK</a>
+    <a href="full-body.html">NEXT · FULL BODY →</a>
+  </nav>
+  <footer>
+    <nav class="bottom-nav" aria-label="Primary navigation">
+      <a href="../index.html">Home</a>
+      <a href="../work.html" class="active" aria-current="page">Work</a>
+      <a href="../about.html">About</a>
+    </nav>
+  </footer>
+</body>
+</html>

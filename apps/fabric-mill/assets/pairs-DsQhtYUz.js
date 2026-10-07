@@ -1,0 +1,1 @@
+import{t as e}from"./notes-Dz9Xhv7-.js";var t=new Map(e.flatMap(e=>e.dontConfuse.map(t=>[t.pairId,{machineId:e.machineId,a:t.a,b:t.b}])));export{t};

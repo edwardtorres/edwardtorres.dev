@@ -1,6 +1,6 @@
 # Edward Torres personal website
 
-A static HTML and CSS portfolio presenting thirteen projects while
+A static HTML and CSS portfolio presenting fourteen projects while
 preserving the site's monochrome visual language, bottom navigation,
 asymmetric project-card grid, and shared project-detail structure.
 
@@ -43,6 +43,7 @@ artifacts. No runtime credentials or environment variables are required.
 - `projects/homevault.html`
 - `projects/az900-study.html`
 - `projects/databricks-study.html`
+- `projects/dp600-study.html`
 - `projects/full-body.html`
 - `projects/full-stretch.html`
 - `projects/quoteflow.html`
@@ -94,3 +95,19 @@ HomeVault page.
 - Open Graph images use root-relative local asset paths. Convert them to absolute
   production URLs after the final domain is selected.
 - Resume integration remains pending until a verified resume file is supplied.
+
+## Fabric Mill · DP-600 Study
+
+The app is published at `https://edwardtorres.dev/apps/fabric-mill/`. Its Work
+card links to `projects/dp600-study.html`, with real app screenshots and a
+description of its skill map, questions, puzzles, labs, and timed mock exams.
+
+Source: `edwardtorres/DP-600-Study-Guide`. To update it, run `npm run check`,
+`npm run build`, `npm run e2e`, and `npm run e2e:prod` in that repository. Then
+run `npm run build:site` and `npm run copy:site -- <portfolio checkout>`. Commit
+the updated `apps/fabric-mill/` files and push `main` to deploy through Cloudflare
+Pages. `_headers` replaces the portfolio CSP within the app path and prevents
+caching the service worker and entry point while caching hashed assets.
+
+The app's manifest and service worker are scoped to `/apps/fabric-mill/`.
+Progress stays in the browser; use Settings export/import to transfer it.

@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Region Builder is an AWS SAA-C03 study game with 69 connected buildings, 1,013 original questions, interactive architecture puzzles, 14 hands-on labs, and timed mock exams.">
+  <meta name="theme-color" content="#ffffff">
+  <link rel="canonical" href="https://edwardtorres.dev/projects/aws-region-builder">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://edwardtorres.dev/projects/aws-region-builder">
+  <meta property="og:title" content="AWS Study · Region Builder | Edward Torres">
+  <meta property="og:description" content="Build a city of AWS architecture skills through source-backed notes, inspections, puzzles, hands-on labs, and spaced review.">
+  <meta property="og:image" content="https://edwardtorres.dev/assets/projects/aws-region-builder/desktop-map.png">
+  <meta property="og:image:alt" content="Region Builder city map with AWS learning districts and demonstration progress">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://edwardtorres.dev/assets/projects/aws-region-builder/desktop-map.png">
+  <title>AWS Study · Region Builder | Edward Torres</title>
+  <link rel="icon" href="../favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  <main class="project-grid" id="main-content" tabindex="-1">
+    <div class="project-text">
+      <p class="eyebrow">AWS ARCHITECTURE · LEARNING TOOL</p>
+      <h1>REGION BUILDER</h1>
+      <p>Region Builder turns preparation for the AWS Solutions Architect – Associate exam into a city inside an AWS Region. Each building represents an architecture skill: survey its notes, pass its inspections, and commission it to unlock the next part of the city.</p>
+      <p class="tech-stack">React · TypeScript · Vite · Tailwind CSS · Offline PWA</p>
+      <div class="project-actions">
+        <a class="button" href="../apps/region-builder/">OPEN STUDY APP</a>
+      </div>
+    </div>
+    <figure class="project-media">
+      <img src="../assets/projects/aws-region-builder/desktop-map.png" alt="Region Builder city map showing four AWS exam districts and the Foundations" width="1440" height="900" decoding="async" fetchpriority="high">
+    </figure>
+  </main>
+  <section class="project-snapshot" aria-labelledby="snapshot-title">
+    <div class="snapshot-grid">
+      <figure class="snapshot-visual landscape">
+        <img src="../assets/projects/aws-region-builder/desktop-notes.png" alt="Source-backed study notes for an AWS architecture building" width="1440" height="900" loading="lazy" decoding="async">
+        <figcaption>Real app captures with seeded demonstration progress; no learner results are implied.</figcaption>
+      </figure>
+      <div class="snapshot-copy">
+        <p class="eyebrow">PROJECT SNAPSHOT</p>
+        <h2 id="snapshot-title">A city of connected architecture decisions</h2>
+        <dl class="snapshot-meta">
+          <div><dt>Type</dt><dd>Interactive certification study game</dd></div>
+          <div><dt>Status</dt><dd>Public app; browser-local progress and offline support</dd></div>
+          <div><dt>Technologies</dt><dd>React 19, TypeScript, Vite, Tailwind CSS, Workbox, Vitest, Playwright, Cloudflare Pages</dd></div>
+        </dl>
+        <ul class="capability-list">
+          <li>69 buildings and 97 prerequisite roads across four exam domains and a Foundations district</li>
+          <li>1,013 original multiple-choice and multiple-response questions mapped to 189 exam-outline bullets</li>
+          <li>Source-backed notes, a glossary, service comparisons, and answer explanations</li>
+          <li>Seven puzzle types, including IAM policy evaluation, VPC traffic tracing, and architecture building</li>
+          <li>14 hands-on AWS labs with cleanup checklists and CloudFormation templates where appropriate</li>
+          <li>Spaced daily review, Weak Spots, maintenance checks, XP, ranks, and badges</li>
+          <li>65-question, 130-minute mock exams with answer review</li>
+          <li>Installable offline app with save export/import and backup reminders</li>
+        </ul>
+        <div class="project-actions">
+          <a class="button" href="../apps/region-builder/">OPEN STUDY APP</a>
+          <a class="button" href="https://github.com/edwardtorres/AWS-Solutions-Architect-Associate" target="_blank" rel="noreferrer">SOURCE REPOSITORY</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="project-details" aria-label="Region Builder project analysis">
+    <div class="project-copy-grid">
+      <article>
+        <h2>The problem</h2>
+        <p>Cloud architecture study involves more than recalling service names. Learners need to connect security, resilience, performance, and cost decisions, recognize prerequisites, and return to weak topics without losing their place in a large exam outline.</p>
+        <p>Region Builder gives that outline a navigable shape. Buildings make individual skills visible; roads express dependencies; inspections connect reading to retrieval practice. A commissioned building marks progress through the game, while readiness is calculated separately from recorded answers.</p>
+      </article>
+      <article>
+        <h2>Learning design</h2>
+        <p>The study loop moves from source-backed notes to start-up checks, five-question inspections, and commissioning. Qualified portfolio buildings also offer placement checks. Multiple-response answers receive credit only when the selected set exactly matches the key.</p>
+        <p>Daily review uses spaced intervals and a local-day answer cap, with weak-topic questions filling spare capacity. Maintenance sets revisit commissioned buildings after poor review performance. Mock exams use a separate reserve and a 19/17/16/13 domain distribution to approximate the guide’s weights.</p>
+      </article>
+      <article>
+        <h2>Content &amp; verification</h2>
+        <p>Notes and questions cite AWS documentation. Content checks map the bank to the exam’s four domains, 14 task statements, and 189 outline bullets. The repository records blind-answer reviews, source reviews, disputed claims, and items awaiting verification.</p>
+        <p>Puzzles compute outcomes from explicit rules instead of grading free-form text. Labs connect the study material to an actual AWS account and include account requirements, cleanup steps, and cost guardrails. Dated source snapshots and freshness checks help identify content that needs another review.</p>
+      </article>
+      <article>
+        <h2>Technical architecture</h2>
+        <p>The application runs entirely in the browser. React renders the map and study screens; TypeScript defines the content and game state. Feature modules and district content load in separate chunks, keeping the full question bank out of the initial JavaScript entry.</p>
+        <p>A versioned local save supports migrations and export/import. Workbox precaches the production app for offline study after installation. Its manifest, worker, icons, and assets are scoped to <code>/apps/region-builder/</code>, allowing it to share this Cloudflare Pages site with the other study apps.</p>
+      </article>
+    </div>
+    <div class="details-gallery project-screens">
+      <img src="../assets/projects/aws-region-builder/phone-map.png" alt="Region Builder map and study navigation on a phone" width="780" height="1688" loading="lazy" decoding="async">
+      <img src="../assets/projects/aws-region-builder/phone-save-protection.png" alt="Save protection controls showing browser storage, backup export, and reminder options" width="660" height="546" loading="lazy" decoding="async">
+    </div>
+    <div class="project-copy-grid">
+      <article>
+        <h2>Quality &amp; deployment</h2>
+        <p>Automated checks cover game rules, save migrations, question selection, puzzle evaluators, and component behavior. Desktop and phone browser tests exercise study flows, accessibility, production security headers, and offline use.</p>
+        <p>The release review corrected maintenance-question ordering and inconsistent random sorting, added subpath-aware asset and offline configuration, and strengthened the bundle check for entry files beneath a subpath. The portfolio serves the app with a scoped security policy and cache rules for fresh entry files and immutable hashed assets.</p>
+      </article>
+      <article>
+        <h2>Tradeoffs &amp; next steps</h2>
+        <p>Browser-local progress avoids accounts and a backend, but it does not sync automatically between devices. Export a backup before clearing browser data. Full offline precaching downloads the study content up front; the initial code is split, but installation still needs a successful first visit.</p>
+        <p>The current result is a functioning study tool, with no claim of measured improvement in exam performance. Useful next steps include learner usability sessions and ongoing source review. Mock percentages cannot predict AWS scaled scores, and practical labs may incur AWS charges.</p>
+        <p>This is an independent, unofficial study aid, not affiliated with or endorsed by AWS. Practice questions are original. Check the linked AWS documentation and official exam guide for current requirements.</p>
+      </article>
+    </div>
+  </section>
+  <nav class="project-pagination" aria-label="Project navigation">
+    <a href="dp600-study.html">← PREVIOUS · DP-600 STUDY</a>
+    <a href="../work.html">ALL WORK</a>
+    <a href="full-body.html">NEXT · FULL BODY →</a>
+  </nav>
+  <footer>
+    <nav class="bottom-nav" aria-label="Primary navigation">
+      <a href="../index.html">Home</a>
+      <a href="../work.html" class="active" aria-current="page">Work</a>
+      <a href="../about.html">About</a>
+    </nav>
+  </footer>
+</body>
+</html>

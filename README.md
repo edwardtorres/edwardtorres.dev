@@ -1,6 +1,6 @@
 # Edward Torres personal website
 
-A static HTML and CSS portfolio presenting fourteen projects while
+A static HTML and CSS portfolio presenting fifteen projects while
 preserving the site's monochrome visual language, bottom navigation,
 asymmetric project-card grid, and shared project-detail structure.
 
@@ -44,6 +44,7 @@ artifacts. No runtime credentials or environment variables are required.
 - `projects/az900-study.html`
 - `projects/databricks-study.html`
 - `projects/dp600-study.html`
+- `projects/aws-region-builder.html`
 - `projects/full-body.html`
 - `projects/full-stretch.html`
 - `projects/quoteflow.html`
@@ -111,3 +112,16 @@ caching the service worker and entry point while caching hashed assets.
 
 The app's manifest and service worker are scoped to `/apps/fabric-mill/`.
 Progress stays in the browser; use Settings export/import to transfer it.
+
+## AWS Study · Region Builder
+
+Region Builder runs at `https://edwardtorres.dev/apps/region-builder/`. Its Work card links to
+`projects/aws-region-builder.html`, with real desktop and phone captures and a full project analysis.
+Source remains in `edwardtorres/AWS-Solutions-Architect-Associate`.
+
+Run the source checks, `npm run build:site`, `npm run check:bundle`, and `npm run test:site`, then
+`npm run copy:site -- <portfolio checkout>`. Commit the app build and push `main` to publish through
+Cloudflare Pages. Preserve the scoped CSP and service-worker cache rules in `_headers`.
+The copy script retains previous hashed assets for tabs open during an update. The service worker
+and manifest are scoped to `/apps/region-builder/`; progress uses an app-specific local storage key.
+Screenshot provenance is in `assets/projects/aws-region-builder/README.md`.

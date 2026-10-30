@@ -128,9 +128,11 @@ Screenshot provenance is in `assets/projects/aws-region-builder/README.md`.
 
 ## SQL Study · Larkspur Data Desk
 
-The Work card links to `projects/sql-study.html`. The app targets
-`https://sql.edwardtorres.dev`, deployed separately through the SQL-Study repository's
-AWS S3/CloudFront workflow. It is not copied into the portfolio's shared origin.
+The Work card links to `projects/sql-study.html`. The requested replacement hostname is
+`https://larkspur.edwardtorres.dev`; hosting and DNS setup are still pending.
+The old SQL hostname did not have a DNS record, and its broken app links have been removed.
+The source repository includes an AWS S3/CloudFront deployment workflow.
+The app is not copied into the portfolio's shared origin.
 Source: `edwardtorres/SQL-Study`. The project page describes the actual learning
 loop, grading, offline behavior, local saves, architecture and limitations.
 Screenshot provenance is in `assets/projects/sql-study/README.md`.

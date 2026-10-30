@@ -413,7 +413,8 @@ footer {
   border-radius: 8px;
 }
 
-.project-media.az900-overview img {
+.project-media.az900-overview img,
+.project-media.sql-overview img {
   aspect-ratio: 4 / 3;
   object-fit: cover;
   object-position: top;

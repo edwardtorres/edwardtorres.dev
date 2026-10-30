@@ -26,6 +26,7 @@
       <h1>LARKSPUR DATA DESK</h1>
       <p>A SQL practice game set at fictional Larkspur Freight. Start as a data intern, read requests from colleagues, write queries, repair broken reports, and build toward data engineering tasks. PostgreSQL runs inside the browser, so answers are checked by a real database.</p>
       <p class="tech-stack">React · TypeScript · Vite · CodeMirror · PGlite · Offline PWA</p>
+      <div class="project-actions"><a class="button" href="https://larkspur.edwardtorres.dev">OPEN SQL DESK</a></div>
     </div>
     <figure class="project-media sql-overview">
       <img src="../assets/projects/sql-study/desktop-office.png" alt="Larkspur Freight office map with SQL chapter desks and beginner progress" width="1280" height="4563" decoding="async" fetchpriority="high">
@@ -42,8 +43,8 @@
         <h2 id="snapshot-title">Real queries, useful mistakes, visible progress</h2>
         <dl class="snapshot-meta">
           <div><dt>Type</dt><dd>Interactive SQL learning and practice game</dd></div>
-          <div><dt>Status</dt><dd>Browser application; hosting setup in progress</dd></div>
-          <div><dt>Technologies</dt><dd>React, TypeScript, Tailwind CSS, CodeMirror 6, PGlite WebAssembly, PostgreSQL AST parsing, Vitest, Playwright, AWS S3 and CloudFront</dd></div>
+          <div><dt>Status</dt><dd>Live at larkspur.edwardtorres.dev</dd></div>
+          <div><dt>Technologies</dt><dd>React, TypeScript, Tailwind CSS, CodeMirror 6, PGlite WebAssembly, PostgreSQL AST parsing, Vitest, Playwright, Cloudflare Pages</dd></div>
         </dl>
         <ul class="capability-list">
           <li>Thirteen chapters covering SELECT, NULL, aggregation, joins, CTEs, windows, writes, modeling, pipelines, indexes, and interview practice</li>
@@ -55,6 +56,7 @@
           <li>Versioned local saves, export/import, backup reminders, and offline use after first loading the needed screens</li>
         </ul>
         <div class="project-actions">
+          <a class="button" href="https://larkspur.edwardtorres.dev">OPEN SQL DESK</a>
           <a class="button" href="https://github.com/edwardtorres/SQL-Study" target="_blank" rel="noreferrer">SOURCE REPOSITORY</a>
         </div>
       </div>
@@ -87,7 +89,7 @@
       <article>
         <h2>Quality &amp; deployment</h2>
         <p>Unit and integration checks cover SQL grading, deterministic seeds, content contracts, game rules, and save migrations. Browser tests exercise phone and desktop journeys, keyboard and tap navigation, accessibility, content security policy, query recovery, and offline operation.</p>
-        <p>The deployment workflow checks and builds the app before publishing to private S3 storage behind CloudFront. Hashed assets use immutable caching; entry files and the offline worker are refreshed separately. The portfolio card and project analysis live on this Cloudflare Pages website.</p>
+        <p>The app is published separately on Cloudflare Pages at larkspur.edwardtorres.dev. Its deployment preserves the WebAssembly security policy, serves precompressed engine files, and caches hashed assets immutably while revalidating the entry page and offline worker. The portfolio card and project analysis live on this website.</p>
       </article>
       <article>
         <h2>Tradeoffs &amp; next steps</h2>

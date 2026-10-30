@@ -128,11 +128,34 @@ Screenshot provenance is in `assets/projects/aws-region-builder/README.md`.
 
 ## SQL Study · Larkspur Data Desk
 
-The Work card links to `projects/sql-study.html`. The requested replacement hostname is
-`https://larkspur.edwardtorres.dev`; hosting and DNS setup are still pending.
-The old SQL hostname did not have a DNS record, and its broken app links have been removed.
-The source repository includes an AWS S3/CloudFront deployment workflow.
-The app is not copied into the portfolio's shared origin.
+The Work card links to `projects/sql-study.html`, using desktop screenshots only.
+The app runs at `https://larkspur.edwardtorres.dev`, on the separate Cloudflare Pages
+Direct Upload project `larkspur-sql-desk`. Its CNAME targets `larkspur-sql-desk.pages.dev`.
+The old SQL hostname had no DNS record and its broken app links were removed.
+The deployed app source is `edwardtorres/SQL-Study` at
+`27bca1d7e5807a60b0bf186c01ca6f9235e13d9d`.
+The app is not copied into the portfolio's shared origin. The source repository's
+AWS deployment templates remain available but are not used by this Cloudflare deployment.
+
+To update it, use Node 24 and run `npm ci`, `npm run check`, and
+`npx playwright test --project=chromium` in the SQL-Study checkout. Use LF line
+endings: two source-text checks depend on them. Then run from this portfolio checkout:
+
+```text
+node scripts/larkspur/package.mjs "<SQL-Study checkout>" "<new empty upload folder>"
+```
+
+Zip the contents of the output folder, keeping `index.html` at the archive root.
+In Cloudflare, open `larkspur-sql-desk`, choose Create deployment, select Production,
+upload the ZIP, and Save and deploy. This project uses manual uploads; a source push
+does not publish it automatically. Run the source's live smoke tests with
+`SITE_URL=https://larkspur.edwardtorres.dev` after deployment.
+
+The packaging helper derives `_headers` from the app's CSP and writes a small Pages
+worker routed only to the four engine binary/data paths. That worker negotiates the
+build's Brotli, gzip or identity files, preserves their content types and lengths,
+and keeps the fixed parser asset revalidated. The rest of the site is static.
+Do not omit `_worker.js` or `_routes.json` when updating the upload.
 Source: `edwardtorres/SQL-Study`. The project page describes the actual learning
 loop, grading, offline behavior, local saves, architecture and limitations.
 Screenshot provenance is in `assets/projects/sql-study/README.md`.

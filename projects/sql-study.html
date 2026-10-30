@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Larkspur Data Desk teaches SQL through thirteen chapters of freight tickets, real PostgreSQL in a browser worker, hidden dataset grading, spaced review, and timed interviews.">
+  <meta name="theme-color" content="#ffffff">
+  <link rel="canonical" href="https://edwardtorres.dev/projects/sql-study">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://edwardtorres.dev/projects/sql-study">
+  <meta property="og:title" content="SQL Study · Larkspur Data Desk | Edward Torres">
+  <meta property="og:description" content="Practice SQL by solving fictional freight tickets against a real PostgreSQL engine running entirely in your browser.">
+  <meta property="og:image" content="https://edwardtorres.dev/assets/projects/sql-study/desktop-office.png">
+  <meta property="og:image:alt" content="Larkspur Freight SQL learning office with chapter desks">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://edwardtorres.dev/assets/projects/sql-study/desktop-office.png">
+  <title>SQL Study · Larkspur Data Desk | Edward Torres</title>
+  <link rel="icon" href="../favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  <main class="project-grid" id="main-content" tabindex="-1">
+    <div class="project-text">
+      <p class="eyebrow">SQL · DATA SKILLS · LEARNING TOOL</p>
+      <h1>LARKSPUR DATA DESK</h1>
+      <p>A SQL practice game set at fictional Larkspur Freight. Start as a data intern, read requests from colleagues, write queries, repair broken reports, and build toward data engineering tasks. PostgreSQL runs inside the browser, so answers are checked by a real database.</p>
+      <p class="tech-stack">React · TypeScript · Vite · CodeMirror · PGlite · Offline PWA</p>
+      <div class="project-actions"><a class="button" href="https://sql.edwardtorres.dev">OPEN SQL DESK</a></div>
+    </div>
+    <figure class="project-media">
+      <img src="../assets/projects/sql-study/desktop-office.png" alt="Larkspur Freight office map with SQL chapter desks and beginner progress" width="1280" height="4563" decoding="async" fetchpriority="high">
+    </figure>
+  </main>
+  <section class="project-snapshot" aria-labelledby="snapshot-title">
+    <div class="snapshot-grid">
+      <figure class="snapshot-visual landscape">
+        <img src="../assets/projects/sql-study/desktop-ticket.png" alt="A SQL ticket with a CodeMirror editor, database results, and schema explorer" width="1280" height="800" loading="lazy" decoding="async">
+        <figcaption>Real application captures from the repository's browser screenshot workflow, using fictional practice data.</figcaption>
+      </figure>
+      <div class="snapshot-copy">
+        <p class="eyebrow">PROJECT SNAPSHOT</p>
+        <h2 id="snapshot-title">Real queries, useful mistakes, visible progress</h2>
+        <dl class="snapshot-meta">
+          <div><dt>Type</dt><dd>Interactive SQL learning and practice game</dd></div>
+          <div><dt>Status</dt><dd>Browser application; deployment targets sql.edwardtorres.dev</dd></div>
+          <div><dt>Technologies</dt><dd>React, TypeScript, Tailwind CSS, CodeMirror 6, PGlite WebAssembly, PostgreSQL AST parsing, Vitest, Playwright, AWS S3 and CloudFront</dd></div>
+        </dl>
+        <ul class="capability-list">
+          <li>Thirteen chapters covering SELECT, NULL, aggregation, joins, CTEs, windows, writes, modeling, pipelines, indexes, and interview practice</li>
+          <li>Runnable lesson examples, predictions, guided queries, independent tickets, and multi-part bosses</li>
+          <li>Deterministic visible and hidden datasets with checks for boundaries, ties, duplicates, and missing values</li>
+          <li>Schema-aware SQL editing, a table explorer, phone keyword buttons, and a read-only scratchpad</li>
+          <li>Tiered hints, known-mistake explanations, and bounded result diffs</li>
+          <li>Mastery gates, ranks, XP, badges, Daily Review, Weak Spots, and timed interview sets</li>
+          <li>Versioned local saves, export/import, backup reminders, and offline use after first loading the needed screens</li>
+        </ul>
+        <div class="project-actions">
+          <a class="button" href="https://sql.edwardtorres.dev">OPEN SQL DESK</a>
+          <a class="button" href="https://github.com/edwardtorres/SQL-Study" target="_blank" rel="noreferrer">SOURCE REPOSITORY</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="project-details" aria-label="Larkspur Data Desk project analysis">
+    <div class="project-copy-grid">
+      <article>
+        <h2>The problem</h2>
+        <p>SQL study can become a cycle of reading syntax without learning how to turn a business request into a correct query. A query that works on one example may still fail when rows contain NULLs, duplicate values, tied timestamps, or boundary dates.</p>
+        <p>The freight setting makes each exercise a concrete request: shortlist shipments, investigate totals, repair an incremental load, or model warehouse data. Small deterministic datasets let learners inspect their work while hidden edge cases check whether the answer generalizes.</p>
+      </article>
+      <article>
+        <h2>Learning design</h2>
+        <p>Each chapter connects a short lesson and runnable example to guided practice, independent work, and a multi-part boss ticket. Boss completion unlocks the next chapter; collecting XP alone cannot substitute for mastery. Learners can also test out through a chapter's boss.</p>
+        <p>Hints progress from a nudge to an approach and partial query. Review revisits earlier work with a different sample, while Weak Spots surfaces recorded mistakes and readiness. Timed interview sets separate pass/fail feedback during the set from explanations after it finishes.</p>
+      </article>
+      <article>
+        <h2>Grading &amp; accuracy</h2>
+        <p>PGlite executes learner and reference SQL against the same deterministic fixtures. Read-query grading compares duplicate counts, required order, column names, and PostgreSQL types. Structural requirements use a PostgreSQL parser rather than keyword matching. Write tickets inspect database state and constraint behavior.</p>
+        <p>Queries run inside rolled-back transactions in a worker with execution deadlines and row caps. A runaway worker is terminated and recreated for the next request. Lessons cite official PostgreSQL documentation, with dialect notes referencing Microsoft and Spark or Databricks sources.</p>
+      </article>
+      <article>
+        <h2>Technical architecture</h2>
+        <p>The app runs entirely in the browser, without accounts or a backend database. React renders the office and learning screens; CodeMirror supplies the SQL editor. Full ticket definitions load by chapter, while the editor and WebAssembly database load when a SQL screen needs them.</p>
+        <p>A service worker caches the shell and saves other assets on use. The large SQL engine is deliberately excluded from precaching. Versioned localStorage saves preserve progress across reloads and migrations; export/import provides manual transfer between devices.</p>
+      </article>
+    </div>
+    <div class="details-gallery project-screens">
+      <img src="../assets/projects/sql-study/phone-office.png" alt="The SQL learning office and chapter navigation on a phone" width="390" height="6528" loading="lazy" decoding="async">
+      <img src="../assets/projects/sql-study/phone-ticket.png" alt="Phone SQL workspace with keyword controls and schema navigation" width="390" height="844" loading="lazy" decoding="async">
+    </div>
+    <div class="project-copy-grid">
+      <article>
+        <h2>Quality &amp; deployment</h2>
+        <p>Unit and integration checks cover SQL grading, deterministic seeds, content contracts, game rules, and save migrations. Browser tests exercise phone and desktop journeys, keyboard and tap navigation, accessibility, content security policy, query recovery, and offline operation.</p>
+        <p>The deployment workflow checks and builds the app before publishing to private S3 storage behind CloudFront. Hashed assets use immutable caching; entry files and the offline worker are refreshed separately. The portfolio card and project analysis live on this Cloudflare Pages website.</p>
+      </article>
+      <article>
+        <h2>Tradeoffs &amp; next steps</h2>
+        <p>Progress stays in the current browser and does not sync automatically. Export a backup before clearing browser data. Offline use requires a successful first visit and loading the screens you intend to use; unopened chapter content may still need a connection.</p>
+        <p>Hidden fixtures are omitted from normal feedback, but browser-delivered content is inspectable. The app supports practice rather than secure assessment. Completion and interview readiness summarize in-app activity, with no claim of measured hiring outcomes or guaranteed job readiness.</p>
+      </article>
+    </div>
+  </section>
+  <nav class="project-pagination" aria-label="Project navigation">
+    <a href="aws-region-builder.html">← PREVIOUS · AWS STUDY</a>
+    <a href="../work.html">ALL WORK</a>
+    <a href="full-body.html">NEXT · FULL BODY →</a>
+  </nav>
+  <footer><nav class="bottom-nav" aria-label="Primary navigation">
+    <a href="../index.html">Home</a><a href="../work.html" class="active" aria-current="page">Work</a><a href="../about.html">About</a>
+  </nav></footer>
+</body>
+</html>

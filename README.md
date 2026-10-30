@@ -1,6 +1,6 @@
 # Edward Torres personal website
 
-A static HTML and CSS portfolio presenting fifteen projects while
+A static HTML and CSS portfolio presenting sixteen projects while
 preserving the site's monochrome visual language, bottom navigation,
 asymmetric project-card grid, and shared project-detail structure.
 
@@ -125,3 +125,12 @@ Cloudflare Pages. Preserve the scoped CSP and service-worker cache rules in `_he
 The copy script retains previous hashed assets for tabs open during an update. The service worker
 and manifest are scoped to `/apps/region-builder/`; progress uses an app-specific local storage key.
 Screenshot provenance is in `assets/projects/aws-region-builder/README.md`.
+
+## SQL Study · Larkspur Data Desk
+
+The Work card links to `projects/sql-study.html`. The app targets
+`https://sql.edwardtorres.dev`, deployed separately through the SQL-Study repository's
+AWS S3/CloudFront workflow. It is not copied into the portfolio's shared origin.
+Source: `edwardtorres/SQL-Study`. The project page describes the actual learning
+loop, grading, offline behavior, local saves, architecture and limitations.
+Screenshot provenance is in `assets/projects/sql-study/README.md`.
